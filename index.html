@@ -5,15 +5,15 @@
 <!-- PREVIEW: keeps the demo out of search engines; remove this line when the real site goes live -->
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Cyprus | Villas and residency homes | Momentum Capital Group</title>
-<meta name="description" content="Villas and residency homes across Cyprus. Checked, negotiated, and followed through to your title deed.">
+<title>Momentum Capital Group | Property in Cyprus for British &amp; European buyers</title>
+<meta name="description" content="We guide British and European buyers to the right property in Cyprus. You choose the property. We take care of everything else.">
 <meta name="theme-color" content="#050505">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%22198.5%20341.3%20244%20244%22%3E%3Crect%20x%3D%22198.5%22%20y%3D%22341.3%22%20width%3D%22244%22%20height%3D%22244%22%20rx%3D%2254%22%20fill%3D%22%2308111F%22%2F%3E%3Cg%20fill%3D%22%23F6BCA0%22%3E%3Cpath%20d%3D%22M299.4%20461.0L304.0%20460.4L308.0%20461.5L311.7%20464.0L314.1%20467.0L315.8%20472.0L315.7%20476.0L314.5%20480.0L311.5%20484.0L231.0%20530.3L226.0%20531.0L222.0%20530.3L218.3%20528.0L215.6%20525.0L213.6%20520.0L213.8%20516.0L215.8%20511.0L219.0%20507.4L282.0%20470.6L296.0%20462.5Z%22%2F%3E%3Cpath%20d%3D%22M318.4%20357.0L323.0%20356.6L327.0%20357.6L329.0%20358.8L331.3%20361.0L333.0%20363.4L334.2%20366.0L334.7%20369.0L334.7%20446.0L334.0%20449.0L333.0%20451.0L330.5%20454.0L327.0%20456.4L322.0%20457.6L317.0%20457.1L312.8%20455.0L310.8%20453.0L308.8%20450.0L307.8%20446.0L307.8%20368.0L309.0%20364.4L311.4%20361.0L314.0%20358.7Z%22%2F%3E%3Cpath%20d%3D%22M335.6%20461.0L340.0%20460.5L344.0%20461.9L420.0%20506.9L423.2%20510.0L424.4%20512.0L425.4%20515.0L425.6%20520.0L424.7%20523.0L423.5%20525.0L420.0%20528.5L417.0%20530.2L413.0%20530.7L409.0%20530.4L405.0%20528.4L364.0%20504.3L330.2%20484.0L328.3%20482.0L326.6%20479.0L325.6%20475.0L325.7%20472.0L326.6%20469.0L329.2%20465.0L332.0%20462.6Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Momentum Capital Group">
 <meta property="og:locale" content="en_GB">
-<meta property="og:title" content="Cyprus | Momentum Capital Group">
-<meta property="og:description" content="Villas and residency homes across Cyprus.">
+<meta property="og:title" content="Momentum Capital Group | Property in Cyprus for British &amp; European buyers">
+<meta property="og:description" content="We specialise in guiding British and European buyers to purchase property in Cyprus.">
 <meta property="og:url" content="https://momentum-cyprus-uk.github.io/">
 <meta property="og:image" content="https://momentum-cyprus-uk.github.io/assets/villa-black.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -35,6 +35,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700&family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@400..700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400&text=%D7%A2%D7%91&display=swap">
 
 <style>
 @property --zs{syntax:'<number>';inherits:true;initial-value:1}
@@ -1011,6 +1012,60 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
 /* layers that have finished their part are taken out, so they cost nothing while the rest scrolls */
 .il-mark.gone,.sheet-off .plan-sheet,.plan-off .b-plan{display:none}
 </style>
+<style>
+/* the British site: the hero's two buttons (they take clicks only while their words are on screen), the reasons'
+   icons, the eight reasons in fours, the founder's line, and the footer's disclaimer */
+.cap-actions{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 0;--ks:clamp(0,(var(--k,0) - .6) * 3,1);opacity:var(--ks);transform:translateY(calc((1 - var(--ks)) * 12px))}
+.cap-actions .btn{margin:0}
+.band.on .cap-actions{pointer-events:auto}
+.led-top:has(.led-i){align-items:center}
+.led-i{display:inline-flex;color:var(--accent)}
+.led-i svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.ledger.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:1100px){.ledger.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.ledger.four{grid-template-columns:1fr}}
+#about .by{margin:18px 0 0;font:500 .74rem/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--stone)}
+#about .lede{margin-top:30px}
+.fine .disclaimer{max-width:72ch}
+</style>
+<!-- motion:css -->
+<style>
+/* Lenis 1.3.27, recommended styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+  overflow: clip;
+}
+
+.lenis [data-lenis-prevent],
+.lenis [data-lenis-prevent-wheel],
+.lenis [data-lenis-prevent-touch],
+.lenis [data-lenis-prevent-vertical],
+.lenis [data-lenis-prevent-horizontal] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+.lenis.lenis-autoToggle {
+  transition-property: overflow;
+  transition-duration: 1ms;
+  transition-behavior: allow-discrete;
+}
+/* ---------- motion from React Bits (Shiny Text, Spotlight Card), ported to plain CSS and script ---------- */
+/* Shiny Text: the words are painted by a gradient the sheen moves through */
+.shiny-text{position:relative;display:inline-block;background-repeat:no-repeat;background-size:100% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+/* Spotlight Card: a soft light under the words, and a thin rim of the same light on the edge */
+.sl-light,.sl-edge{position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0}
+.sl-light{z-index:-1}
+.sl-edge{z-index:1;padding:1px;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+</style>
+<!-- /motion:css -->
 </head>
 <body>
 <svg class="defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><linearGradient id="mkFront" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5E5E64"/><stop offset=".38" stop-color="#1F1F22"/><stop offset="1" stop-color="#070708"/></linearGradient><symbol id="mk" viewBox="198.5 341.3 244 244"><path d="M318.4 357.0L323.0 356.6L327.0 357.6L329.0 358.8L331.3 361.0L333.0 363.4L334.2 366.0L334.7 369.0L334.7 446.0L334.0 449.0L333.0 451.0L330.5 454.0L327.0 456.4L322.0 457.6L317.0 457.1L312.8 455.0L310.8 453.0L308.8 450.0L307.8 446.0L307.8 368.0L309.0 364.4L311.4 361.0L314.0 358.7Z" style="transform-box:fill-box;transform-origin:50% 100%;transform:scale(var(--ka1,1));opacity:min(1,calc(var(--ka1,1) * 4))"/><path d="M299.4 461.0L304.0 460.4L308.0 461.5L311.7 464.0L314.1 467.0L315.8 472.0L315.7 476.0L314.5 480.0L311.5 484.0L231.0 530.3L226.0 531.0L222.0 530.3L218.3 528.0L215.6 525.0L213.6 520.0L213.8 516.0L215.8 511.0L219.0 507.4L282.0 470.6L296.0 462.5Z" style="transform-box:fill-box;transform-origin:104.6% 4.1%;transform:scale(var(--ka2,1));opacity:min(1,calc(var(--ka2,1) * 4))"/><path d="M335.6 461.0L340.0 460.5L344.0 461.9L420.0 506.9L423.2 510.0L424.4 512.0L425.4 515.0L425.6 520.0L424.7 523.0L423.5 525.0L420.0 528.5L417.0 530.2L413.0 530.7L409.0 530.4L405.0 528.4L364.0 504.3L330.2 484.0L328.3 482.0L326.6 479.0L325.6 475.0L325.7 472.0L326.6 469.0L329.2 465.0L332.0 462.6Z" style="transform-box:fill-box;transform-origin:-5.1% 4%;transform:scale(var(--ka3,1));opacity:min(1,calc(var(--ka3,1) * 4))"/></symbol><symbol id="wmtop" viewBox="506 387 1081 100"><path d="M517.2 391.0L521.0 391.1L522.0 392.0L567.0 451.2L568.0 450.7L570.1 448.0L614.0 391.1L626.0 391.2L626.5 392.0L626.6 426.0L626.6 478.0L626.5 483.0L626.0 483.7L615.0 483.8L613.6 483.0L613.8 413.0L613.0 411.9L597.8 431.0L572.0 464.7L571.0 465.6L570.0 465.7L564.0 465.7L562.6 465.0L522.0 411.6L521.5 412.0L521.4 413.0L521.4 483.0L521.0 483.7L520.0 483.8L510.0 483.8L509.0 483.2L508.8 392.0L510.0 391.1Z"/><path d="M712.3 390.0L717.0 389.5L726.0 389.5L736.0 390.7L746.0 393.7L753.0 396.7L762.0 402.7L769.0 409.4L774.3 417.0L777.5 424.0L779.5 432.0L779.7 437.0L779.4 443.0L777.3 451.0L773.5 459.0L769.2 465.0L761.9 472.0L756.0 476.4L746.0 481.2L734.0 484.3L720.0 485.1L709.0 484.1L698.0 481.1L691.0 478.1L686.0 475.3L678.2 469.0L674.0 464.4L670.8 460.0L666.9 452.0L664.5 442.0L664.8 432.0L665.9 427.0L667.7 422.0L669.7 418.0L672.8 413.0L680.0 404.8L685.0 400.8L690.0 397.7L696.0 394.6L701.0 392.8ZM713.0 400.9L703.0 403.7L695.0 407.7L688.0 413.3L682.0 421.0L679.8 425.0L678.8 428.0L677.6 435.0L677.8 443.0L678.8 447.0L680.8 452.0L684.7 458.0L691.0 464.2L694.0 466.3L701.1 470.0L711.0 473.1L721.0 474.3L732.0 473.3L740.0 471.2L747.0 468.2L752.0 465.2L758.4 459.0L761.4 455.0L765.2 447.0L766.3 441.0L766.3 435.0L765.3 429.0L763.1 423.0L761.5 420.0L755.8 413.0L749.0 407.7L744.0 404.9L739.0 402.8L730.0 400.7L721.0 400.3Z"/><path d="M818.3 391.0L829.0 390.9L830.8 392.0L874.0 450.8L875.0 450.7L919.2 392.0L921.0 390.9L931.0 390.8L932.0 391.4L932.3 392.0L932.5 402.0L932.4 481.0L932.0 483.5L931.0 483.9L921.0 483.7L920.0 483.6L919.4 483.0L919.5 413.0L919.0 411.9L879.3 464.0L878.0 465.4L877.0 465.5L871.0 465.5L869.6 465.0L831.0 412.2L830.0 412.6L829.9 483.0L829.0 483.9L818.0 483.5L817.5 483.0L817.4 477.0L817.4 392.0Z"/><path d="M977.9 391.0L1055.0 391.0L1055.6 392.0L1055.6 400.0L1055.0 401.2L991.0 401.3L990.0 401.8L989.6 430.0L990.0 430.8L991.0 431.2L1043.0 431.2L1043.8 432.0L1044.0 438.0L1043.8 441.0L1043.0 441.6L991.0 441.6L990.0 441.9L989.7 443.0L989.6 472.0L990.0 473.0L996.0 473.3L1055.0 473.4L1055.6 474.0L1055.6 477.0L1055.5 483.0L1055.0 483.7L982.0 483.9L978.0 483.8L977.0 483.3L976.8 392.0Z"/><path d="M1097.8 391.0L1108.0 390.9L1110.0 391.4L1176.0 464.4L1177.2 464.0L1177.1 392.0L1178.0 391.0L1189.0 391.1L1189.9 392.0L1190.2 398.0L1190.0 483.0L1189.0 483.9L1177.0 483.6L1111.0 410.9L1110.3 412.0L1110.2 483.0L1109.0 483.8L1098.0 483.8L1097.2 483.0L1097.1 478.0L1097.2 395.0L1097.3 392.0Z"/><path d="M1222.7 391.0L1309.0 390.9L1310.2 392.0L1310.3 400.0L1309.9 401.0L1309.0 401.4L1273.0 401.4L1272.0 402.0L1272.0 477.0L1271.8 483.0L1271.0 483.8L1260.0 483.8L1259.1 483.0L1258.9 402.0L1258.0 401.3L1223.0 401.3L1222.3 400.0L1222.3 392.0Z"/><path d="M1338.8 391.0L1350.0 391.0L1350.8 392.0L1350.9 448.0L1351.7 454.0L1353.5 459.0L1357.5 465.0L1361.0 468.0L1364.0 470.0L1372.0 473.2L1378.0 474.2L1382.0 474.3L1386.0 474.1L1392.0 473.0L1399.8 470.0L1403.0 468.1L1407.0 464.8L1409.4 462.0L1411.2 459.0L1413.1 453.0L1413.8 448.0L1413.8 392.0L1415.0 391.0L1426.1 391.0L1426.7 392.0L1426.5 453.0L1425.3 458.0L1422.0 465.0L1419.3 469.0L1414.5 474.0L1409.0 478.2L1400.0 482.3L1393.0 484.2L1381.0 485.2L1371.0 484.3L1361.0 481.2L1357.0 479.2L1351.0 475.2L1346.6 471.0L1342.9 466.0L1339.5 459.0L1337.7 451.0L1337.6 393.0L1337.6 392.0Z"/><path d="M1467.6 391.0L1479.0 390.9L1480.0 391.5L1519.7 445.0L1525.0 451.4L1571.0 391.7L1573.0 390.8L1583.4 391.0L1584.2 392.0L1584.2 396.0L1584.0 483.2L1583.0 483.9L1573.0 483.8L1571.7 483.0L1571.6 413.0L1571.0 411.7L1550.7 437.0L1529.4 465.0L1528.0 465.7L1521.0 465.7L1519.9 465.0L1481.0 412.3L1480.1 413.0L1480.1 483.0L1479.0 483.9L1468.0 483.8L1467.1 483.0L1467.1 478.0L1467.0 392.0Z"/></symbol><symbol id="wmsub" viewBox="620 528 845 50"><path d="M648.2 534.0L655.0 533.6L661.0 534.7L666.2 537.0L666.7 538.0L666.4 539.0L665.0 541.2L660.0 539.0L656.0 537.8L650.0 537.7L646.0 538.7L642.0 541.0L638.9 545.0L637.6 549.0L637.1 555.0L637.8 560.0L638.7 562.0L642.0 566.1L645.0 568.2L648.0 569.4L652.0 570.0L658.0 569.3L665.0 566.2L667.2 569.0L666.5 570.0L664.0 571.5L659.0 573.3L651.0 573.9L647.0 573.5L643.0 572.3L639.1 570.0L636.9 568.0L634.6 565.0L632.6 560.0L631.7 555.0L631.8 551.0L632.7 547.0L634.6 543.0L638.0 538.9L641.0 536.6L645.0 534.8Z"/><path d="M717.3 535.0L718.0 534.5L722.0 534.4L723.0 534.5L724.1 536.0L726.5 542.0L739.3 569.0L740.8 573.0L740.0 573.5L737.0 573.5L735.7 573.0L731.1 563.0L730.0 562.2L729.0 562.2L711.0 562.3L709.5 564.0L705.5 573.0L704.0 573.6L701.0 573.5L700.4 573.0ZM720.0 540.0L712.4 557.0L712.5 558.0L713.0 558.4L728.0 558.4L728.6 558.0L728.5 557.0L721.0 540.1Z"/><path d="M776.0 535.0L777.0 534.3L778.0 534.3L794.0 534.3L797.0 534.6L800.0 535.5L803.0 537.4L805.4 540.0L806.4 542.0L807.2 546.0L806.7 550.0L805.5 553.0L802.0 556.2L799.0 557.5L795.0 558.3L782.0 558.4L781.4 559.0L781.4 572.0L781.0 573.2L780.0 573.5L777.0 573.4L776.1 572.0ZM782.0 537.9L781.2 539.0L781.2 553.0L781.2 554.0L782.0 554.7L795.0 554.4L798.0 553.5L801.0 551.0L802.3 548.0L802.4 545.0L801.4 542.0L799.0 539.6L797.0 538.7L793.5 538.0Z"/><path d="M843.5 535.0L845.0 534.3L848.0 534.5L848.6 535.0L848.8 536.0L848.8 572.0L848.6 573.0L848.0 573.5L844.0 573.3L843.4 572.0Z"/><path d="M885.5 535.0L886.0 534.5L888.0 534.4L918.0 534.3L919.0 534.4L919.5 535.0L919.5 537.0L919.0 537.8L906.0 537.9L904.8 539.0L904.8 572.0L904.6 573.0L904.0 573.5L901.0 573.4L900.1 572.0L900.0 539.0L899.0 537.8L886.0 537.9L885.4 537.0Z"/><path d="M964.3 535.0L965.0 534.5L968.0 534.4L970.1 535.0L985.3 568.0L987.0 572.0L987.0 573.3L983.0 573.5L982.5 573.0L978.0 563.3L977.0 562.3L976.0 562.2L957.0 562.6L951.7 573.0L951.0 573.5L948.0 573.6L947.0 573.0L952.9 559.0ZM967.0 539.7L966.0 541.1L962.5 549.0L959.0 557.0L958.9 558.0L960.0 558.4L975.0 558.3L975.1 557.0L968.0 541.0Z"/><path d="M1022.4 535.0L1023.0 534.4L1024.0 534.4L1027.0 534.5L1027.4 535.0L1027.6 569.0L1029.0 569.5L1048.0 569.4L1049.3 570.0L1049.5 572.0L1049.0 573.3L1024.0 573.6L1022.6 573.0Z"/><path d="M1145.2 534.0L1151.0 533.7L1157.0 534.6L1162.5 537.0L1163.5 538.0L1163.2 539.0L1162.0 541.1L1156.0 538.8L1151.0 537.7L1148.0 537.7L1142.0 538.9L1139.0 540.5L1135.7 544.0L1133.6 548.0L1132.7 554.0L1133.6 560.0L1136.6 565.0L1141.0 568.3L1144.0 569.4L1148.0 570.0L1156.0 569.3L1159.0 568.2L1160.2 567.0L1160.0 557.2L1159.0 556.5L1150.0 556.5L1149.0 556.0L1148.7 555.0L1149.0 553.2L1150.0 552.7L1164.6 553.0L1165.2 554.0L1165.1 569.0L1164.0 570.4L1159.0 572.6L1155.0 573.6L1149.0 574.2L1143.0 573.5L1139.0 572.3L1135.1 570.0L1131.9 567.0L1130.5 565.0L1128.7 561.0L1127.8 556.0L1127.8 551.0L1128.7 547.0L1130.5 543.0L1133.1 540.0L1137.0 536.9L1141.2 535.0Z"/><path d="M1203.5 535.0L1205.0 534.3L1225.0 534.6L1229.0 535.8L1232.7 539.0L1234.3 542.0L1234.7 544.0L1234.6 547.0L1234.0 550.0L1232.0 553.3L1229.0 555.5L1225.4 557.0L1225.4 558.0L1235.0 572.2L1235.5 573.0L1235.0 573.6L1231.0 573.6L1230.0 573.1L1220.0 558.4L1219.0 557.7L1218.0 557.6L1210.0 557.6L1208.7 558.0L1208.3 559.0L1208.2 573.0L1207.0 573.5L1205.0 573.5L1203.6 573.0ZM1210.0 537.9L1209.0 538.1L1208.4 539.0L1208.3 553.0L1209.0 553.7L1223.0 553.5L1226.7 552.0L1229.0 549.6L1229.8 547.0L1229.6 544.0L1229.0 542.2L1227.0 539.7L1225.0 538.7L1222.0 538.0Z"/><path d="M1287.2 534.0L1295.0 533.8L1302.0 535.8L1305.0 537.7L1308.4 541.0L1310.4 544.0L1311.7 547.0L1312.6 551.0L1312.6 556.0L1312.2 559.0L1310.4 564.0L1307.4 568.0L1305.0 570.2L1301.9 572.0L1298.0 573.4L1294.0 574.1L1289.0 574.0L1284.0 573.2L1280.0 571.5L1277.0 569.5L1274.0 566.4L1270.8 560.0L1270.1 554.0L1270.6 549.0L1271.5 546.0L1273.6 542.0L1276.4 539.0L1279.1 537.0L1284.0 534.7ZM1287.0 537.9L1284.0 538.9L1281.0 540.7L1278.7 543.0L1276.8 546.0L1275.4 551.0L1275.3 555.0L1275.8 559.0L1277.0 561.9L1279.0 564.6L1282.0 567.4L1284.0 568.5L1287.0 569.5L1291.0 570.1L1297.0 569.4L1301.0 567.5L1302.8 566.0L1304.5 564.0L1306.1 561.0L1307.5 555.0L1307.2 551.0L1306.2 547.0L1305.4 545.0L1303.1 542.0L1298.0 538.8L1293.0 537.6Z"/><path d="M1348.8 535.0L1350.0 534.4L1353.0 534.5L1353.6 535.0L1353.8 559.0L1354.7 564.0L1357.0 567.0L1359.0 568.3L1362.0 569.5L1366.0 570.0L1370.0 569.6L1373.0 568.7L1375.0 567.5L1377.4 565.0L1378.3 563.0L1379.0 558.0L1379.1 535.0L1380.0 534.4L1382.0 534.4L1383.0 534.4L1383.7 535.0L1383.9 561.0L1383.4 564.0L1382.5 566.0L1381.3 568.0L1379.0 570.3L1376.0 572.2L1373.0 573.3L1365.0 574.1L1361.0 573.6L1357.0 572.4L1354.5 571.0L1352.4 569.0L1350.5 566.0L1348.9 561.0Z"/><path d="M1421.6 535.0L1423.0 534.3L1440.0 534.4L1446.0 535.5L1448.7 537.0L1451.6 540.0L1452.5 542.0L1453.2 545.0L1453.1 548.0L1451.8 552.0L1450.0 554.5L1447.0 556.6L1441.0 558.3L1428.0 558.5L1427.0 558.9L1426.8 572.0L1426.6 573.0L1426.0 573.5L1423.0 573.5L1422.0 573.1L1421.6 572.0ZM1428.0 537.8L1426.8 539.0L1427.0 554.3L1428.0 554.7L1440.0 554.6L1444.0 553.4L1446.8 551.0L1447.8 549.0L1448.1 545.0L1447.0 542.1L1445.0 539.8L1443.0 538.7L1439.0 537.9Z"/></symbol><symbol id="lockupSym" viewBox="198 341 1390 240"><use href="#mk" x="198.5" y="341.3" width="244" height="244"/><use href="#wmtop" x="506" y="387" width="1081" height="100"/><use href="#wmsub" x="620" y="528" width="845" height="50"/></symbol></defs></svg>
@@ -1027,6 +1082,8 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
     <nav class="seg" id="seg" aria-label="Main" hidden style="display:none">
       <span class="seg-slab" aria-hidden="true"></span>
     </nav>
+    <!-- Hebrew: the Cyprus site's Hebrew pages (this site has no Hebrew of its own) -->
+    <div class="lang" dir="ltr"><span class="cur" aria-current="true">EN</span><span class="sep" aria-hidden="true">/</span><a href="https://momentum-cyprus.github.io/he/" hreflang="he" lang="he" data-lang="he">עב<span class="sr-only"> עברית</span></a></div>
     <a class="btn btn-primary btn-sm" href="#consult">Book a consultation</a>
   </div>
 </header>
@@ -1034,22 +1091,38 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
 <main id="main" tabindex="-1">
 
 
-  <!-- ============ Cyprus: from the Eastern Mediterranean, down through the night, to the villa at dawn ============ -->
-  <section class="hero" id="top" style="--hero-h:435vh" aria-label="Cyprus, from above">
+  <!-- ============ the whole Earth, down to the Eastern Mediterranean, into Cyprus and through the cloud to the villa ============ -->
+  <section class="hero" id="top" style="--hero-h:1020vh" aria-label="From space down to Cyprus">
     <div class="stage" id="stage" data-static="cover" style="--static-img:url('assets/cyprus-above.jpg');--pzx:50%;--pzy:55%">
       <div class="media" aria-hidden="true">
         <div class="zoom">
           <div class="poster"></div>
           <div class="poster-end"></div>
           <video id="heroVideo" muted playsinline preload="none" tabindex="-1" aria-hidden="true" disablepictureinpicture></video>
+          <div class="media-vignette"></div>
         </div>
       </div>
       <div class="scrim" aria-hidden="true"></div>
       <div class="topscrim" aria-hidden="true"></div>
 
-      <div class="band b1" data-a="0" data-b="0.13">
+      <div class="band b1" data-a="0" data-b="0.1029">
+        <h1 class="sr-only">Momentum Capital Group</h1>
+        <div class="lockup" id="lockup" dir="ltr">
+          <span class="m3d hero-mark" data-spin data-assemble></span>
+          <svg class="wm" viewBox="506 387 1081 190" aria-hidden="true" focusable="false"><g class="wm-top"><path class="lt" style="--i:0;--cx:567.7" d="M517.2 391.0L521.0 391.1L522.0 392.0L567.0 451.2L568.0 450.7L570.1 448.0L614.0 391.1L626.0 391.2L626.5 392.0L626.6 426.0L626.6 478.0L626.5 483.0L626.0 483.7L615.0 483.8L613.6 483.0L613.8 413.0L613.0 411.9L597.8 431.0L572.0 464.7L571.0 465.6L570.0 465.7L564.0 465.7L562.6 465.0L522.0 411.6L521.5 412.0L521.4 413.0L521.4 483.0L521.0 483.7L520.0 483.8L510.0 483.8L509.0 483.2L508.8 392.0L510.0 391.1Z"/><path class="lt" style="--i:1;--cx:722.1" d="M712.3 390.0L717.0 389.5L726.0 389.5L736.0 390.7L746.0 393.7L753.0 396.7L762.0 402.7L769.0 409.4L774.3 417.0L777.5 424.0L779.5 432.0L779.7 437.0L779.4 443.0L777.3 451.0L773.5 459.0L769.2 465.0L761.9 472.0L756.0 476.4L746.0 481.2L734.0 484.3L720.0 485.1L709.0 484.1L698.0 481.1L691.0 478.1L686.0 475.3L678.2 469.0L674.0 464.4L670.8 460.0L666.9 452.0L664.5 442.0L664.8 432.0L665.9 427.0L667.7 422.0L669.7 418.0L672.8 413.0L680.0 404.8L685.0 400.8L690.0 397.7L696.0 394.6L701.0 392.8ZM713.0 400.9L703.0 403.7L695.0 407.7L688.0 413.3L682.0 421.0L679.8 425.0L678.8 428.0L677.6 435.0L677.8 443.0L678.8 447.0L680.8 452.0L684.7 458.0L691.0 464.2L694.0 466.3L701.1 470.0L711.0 473.1L721.0 474.3L732.0 473.3L740.0 471.2L747.0 468.2L752.0 465.2L758.4 459.0L761.4 455.0L765.2 447.0L766.3 441.0L766.3 435.0L765.3 429.0L763.1 423.0L761.5 420.0L755.8 413.0L749.0 407.7L744.0 404.9L739.0 402.8L730.0 400.7L721.0 400.3Z"/><path class="lt" style="--i:2;--cx:875.0" d="M818.3 391.0L829.0 390.9L830.8 392.0L874.0 450.8L875.0 450.7L919.2 392.0L921.0 390.9L931.0 390.8L932.0 391.4L932.3 392.0L932.5 402.0L932.4 481.0L932.0 483.5L931.0 483.9L921.0 483.7L920.0 483.6L919.4 483.0L919.5 413.0L919.0 411.9L879.3 464.0L878.0 465.4L877.0 465.5L871.0 465.5L869.6 465.0L831.0 412.2L830.0 412.6L829.9 483.0L829.0 483.9L818.0 483.5L817.5 483.0L817.4 477.0L817.4 392.0Z"/><path class="lt" style="--i:3;--cx:1016.2" d="M977.9 391.0L1055.0 391.0L1055.6 392.0L1055.6 400.0L1055.0 401.2L991.0 401.3L990.0 401.8L989.6 430.0L990.0 430.8L991.0 431.2L1043.0 431.2L1043.8 432.0L1044.0 438.0L1043.8 441.0L1043.0 441.6L991.0 441.6L990.0 441.9L989.7 443.0L989.6 472.0L990.0 473.0L996.0 473.3L1055.0 473.4L1055.6 474.0L1055.6 477.0L1055.5 483.0L1055.0 483.7L982.0 483.9L978.0 483.8L977.0 483.3L976.8 392.0Z"/><path class="lt" style="--i:4;--cx:1143.7" d="M1097.8 391.0L1108.0 390.9L1110.0 391.4L1176.0 464.4L1177.2 464.0L1177.1 392.0L1178.0 391.0L1189.0 391.1L1189.9 392.0L1190.2 398.0L1190.0 483.0L1189.0 483.9L1177.0 483.6L1111.0 410.9L1110.3 412.0L1110.2 483.0L1109.0 483.8L1098.0 483.8L1097.2 483.0L1097.1 478.0L1097.2 395.0L1097.3 392.0Z"/><path class="lt" style="--i:5;--cx:1266.3" d="M1222.7 391.0L1309.0 390.9L1310.2 392.0L1310.3 400.0L1309.9 401.0L1309.0 401.4L1273.0 401.4L1272.0 402.0L1272.0 477.0L1271.8 483.0L1271.0 483.8L1260.0 483.8L1259.1 483.0L1258.9 402.0L1258.0 401.3L1223.0 401.3L1222.3 400.0L1222.3 392.0Z"/><path class="lt" style="--i:6;--cx:1382.2" d="M1338.8 391.0L1350.0 391.0L1350.8 392.0L1350.9 448.0L1351.7 454.0L1353.5 459.0L1357.5 465.0L1361.0 468.0L1364.0 470.0L1372.0 473.2L1378.0 474.2L1382.0 474.3L1386.0 474.1L1392.0 473.0L1399.8 470.0L1403.0 468.1L1407.0 464.8L1409.4 462.0L1411.2 459.0L1413.1 453.0L1413.8 448.0L1413.8 392.0L1415.0 391.0L1426.1 391.0L1426.7 392.0L1426.5 453.0L1425.3 458.0L1422.0 465.0L1419.3 469.0L1414.5 474.0L1409.0 478.2L1400.0 482.3L1393.0 484.2L1381.0 485.2L1371.0 484.3L1361.0 481.2L1357.0 479.2L1351.0 475.2L1346.6 471.0L1342.9 466.0L1339.5 459.0L1337.7 451.0L1337.6 393.0L1337.6 392.0Z"/><path class="lt" style="--i:7;--cx:1525.6" d="M1467.6 391.0L1479.0 390.9L1480.0 391.5L1519.7 445.0L1525.0 451.4L1571.0 391.7L1573.0 390.8L1583.4 391.0L1584.2 392.0L1584.2 396.0L1584.0 483.2L1583.0 483.9L1573.0 483.8L1571.7 483.0L1571.6 413.0L1571.0 411.7L1550.7 437.0L1529.4 465.0L1528.0 465.7L1521.0 465.7L1519.9 465.0L1481.0 412.3L1480.1 413.0L1480.1 483.0L1479.0 483.9L1468.0 483.8L1467.1 483.0L1467.1 478.0L1467.0 392.0Z"/></g><g class="wm-sub"><path class="ls" style="--i:0;--cx:649.5" d="M648.2 534.0L655.0 533.6L661.0 534.7L666.2 537.0L666.7 538.0L666.4 539.0L665.0 541.2L660.0 539.0L656.0 537.8L650.0 537.7L646.0 538.7L642.0 541.0L638.9 545.0L637.6 549.0L637.1 555.0L637.8 560.0L638.7 562.0L642.0 566.1L645.0 568.2L648.0 569.4L652.0 570.0L658.0 569.3L665.0 566.2L667.2 569.0L666.5 570.0L664.0 571.5L659.0 573.3L651.0 573.9L647.0 573.5L643.0 572.3L639.1 570.0L636.9 568.0L634.6 565.0L632.6 560.0L631.7 555.0L631.8 551.0L632.7 547.0L634.6 543.0L638.0 538.9L641.0 536.6L645.0 534.8Z"/><path class="ls" style="--i:1;--cx:720.6" d="M717.3 535.0L718.0 534.5L722.0 534.4L723.0 534.5L724.1 536.0L726.5 542.0L739.3 569.0L740.8 573.0L740.0 573.5L737.0 573.5L735.7 573.0L731.1 563.0L730.0 562.2L729.0 562.2L711.0 562.3L709.5 564.0L705.5 573.0L704.0 573.6L701.0 573.5L700.4 573.0ZM720.0 540.0L712.4 557.0L712.5 558.0L713.0 558.4L728.0 558.4L728.6 558.0L728.5 557.0L721.0 540.1Z"/><path class="ls" style="--i:2;--cx:791.6" d="M776.0 535.0L777.0 534.3L778.0 534.3L794.0 534.3L797.0 534.6L800.0 535.5L803.0 537.4L805.4 540.0L806.4 542.0L807.2 546.0L806.7 550.0L805.5 553.0L802.0 556.2L799.0 557.5L795.0 558.3L782.0 558.4L781.4 559.0L781.4 572.0L781.0 573.2L780.0 573.5L777.0 573.4L776.1 572.0ZM782.0 537.9L781.2 539.0L781.2 553.0L781.2 554.0L782.0 554.7L795.0 554.4L798.0 553.5L801.0 551.0L802.3 548.0L802.4 545.0L801.4 542.0L799.0 539.6L797.0 538.7L793.5 538.0Z"/><path class="ls" style="--i:3;--cx:846.1" d="M843.5 535.0L845.0 534.3L848.0 534.5L848.6 535.0L848.8 536.0L848.8 572.0L848.6 573.0L848.0 573.5L844.0 573.3L843.4 572.0Z"/><path class="ls" style="--i:4;--cx:902.5" d="M885.5 535.0L886.0 534.5L888.0 534.4L918.0 534.3L919.0 534.4L919.5 535.0L919.5 537.0L919.0 537.8L906.0 537.9L904.8 539.0L904.8 572.0L904.6 573.0L904.0 573.5L901.0 573.4L900.1 572.0L900.0 539.0L899.0 537.8L886.0 537.9L885.4 537.0Z"/><path class="ls" style="--i:5;--cx:967.0" d="M964.3 535.0L965.0 534.5L968.0 534.4L970.1 535.0L985.3 568.0L987.0 572.0L987.0 573.3L983.0 573.5L982.5 573.0L978.0 563.3L977.0 562.3L976.0 562.2L957.0 562.6L951.7 573.0L951.0 573.5L948.0 573.6L947.0 573.0L952.9 559.0ZM967.0 539.7L966.0 541.1L962.5 549.0L959.0 557.0L958.9 558.0L960.0 558.4L975.0 558.3L975.1 557.0L968.0 541.0Z"/><path class="ls" style="--i:6;--cx:1036.0" d="M1022.4 535.0L1023.0 534.4L1024.0 534.4L1027.0 534.5L1027.4 535.0L1027.6 569.0L1029.0 569.5L1048.0 569.4L1049.3 570.0L1049.5 572.0L1049.0 573.3L1024.0 573.6L1022.6 573.0Z"/><path class="ls" style="--i:7;--cx:1146.5" d="M1145.2 534.0L1151.0 533.7L1157.0 534.6L1162.5 537.0L1163.5 538.0L1163.2 539.0L1162.0 541.1L1156.0 538.8L1151.0 537.7L1148.0 537.7L1142.0 538.9L1139.0 540.5L1135.7 544.0L1133.6 548.0L1132.7 554.0L1133.6 560.0L1136.6 565.0L1141.0 568.3L1144.0 569.4L1148.0 570.0L1156.0 569.3L1159.0 568.2L1160.2 567.0L1160.0 557.2L1159.0 556.5L1150.0 556.5L1149.0 556.0L1148.7 555.0L1149.0 553.2L1150.0 552.7L1164.6 553.0L1165.2 554.0L1165.1 569.0L1164.0 570.4L1159.0 572.6L1155.0 573.6L1149.0 574.2L1143.0 573.5L1139.0 572.3L1135.1 570.0L1131.9 567.0L1130.5 565.0L1128.7 561.0L1127.8 556.0L1127.8 551.0L1128.7 547.0L1130.5 543.0L1133.1 540.0L1137.0 536.9L1141.2 535.0Z"/><path class="ls" style="--i:8;--cx:1219.5" d="M1203.5 535.0L1205.0 534.3L1225.0 534.6L1229.0 535.8L1232.7 539.0L1234.3 542.0L1234.7 544.0L1234.6 547.0L1234.0 550.0L1232.0 553.3L1229.0 555.5L1225.4 557.0L1225.4 558.0L1235.0 572.2L1235.5 573.0L1235.0 573.6L1231.0 573.6L1230.0 573.1L1220.0 558.4L1219.0 557.7L1218.0 557.6L1210.0 557.6L1208.7 558.0L1208.3 559.0L1208.2 573.0L1207.0 573.5L1205.0 573.5L1203.6 573.0ZM1210.0 537.9L1209.0 538.1L1208.4 539.0L1208.3 553.0L1209.0 553.7L1223.0 553.5L1226.7 552.0L1229.0 549.6L1229.8 547.0L1229.6 544.0L1229.0 542.2L1227.0 539.7L1225.0 538.7L1222.0 538.0Z"/><path class="ls" style="--i:9;--cx:1291.3" d="M1287.2 534.0L1295.0 533.8L1302.0 535.8L1305.0 537.7L1308.4 541.0L1310.4 544.0L1311.7 547.0L1312.6 551.0L1312.6 556.0L1312.2 559.0L1310.4 564.0L1307.4 568.0L1305.0 570.2L1301.9 572.0L1298.0 573.4L1294.0 574.1L1289.0 574.0L1284.0 573.2L1280.0 571.5L1277.0 569.5L1274.0 566.4L1270.8 560.0L1270.1 554.0L1270.6 549.0L1271.5 546.0L1273.6 542.0L1276.4 539.0L1279.1 537.0L1284.0 534.7ZM1287.0 537.9L1284.0 538.9L1281.0 540.7L1278.7 543.0L1276.8 546.0L1275.4 551.0L1275.3 555.0L1275.8 559.0L1277.0 561.9L1279.0 564.6L1282.0 567.4L1284.0 568.5L1287.0 569.5L1291.0 570.1L1297.0 569.4L1301.0 567.5L1302.8 566.0L1304.5 564.0L1306.1 561.0L1307.5 555.0L1307.2 551.0L1306.2 547.0L1305.4 545.0L1303.1 542.0L1298.0 538.8L1293.0 537.6Z"/><path class="ls" style="--i:10;--cx:1366.3" d="M1348.8 535.0L1350.0 534.4L1353.0 534.5L1353.6 535.0L1353.8 559.0L1354.7 564.0L1357.0 567.0L1359.0 568.3L1362.0 569.5L1366.0 570.0L1370.0 569.6L1373.0 568.7L1375.0 567.5L1377.4 565.0L1378.3 563.0L1379.0 558.0L1379.1 535.0L1380.0 534.4L1382.0 534.4L1383.0 534.4L1383.7 535.0L1383.9 561.0L1383.4 564.0L1382.5 566.0L1381.3 568.0L1379.0 570.3L1376.0 572.2L1373.0 573.3L1365.0 574.1L1361.0 573.6L1357.0 572.4L1354.5 571.0L1352.4 569.0L1350.5 566.0L1348.9 561.0Z"/><path class="ls" style="--i:11;--cx:1437.4" d="M1421.6 535.0L1423.0 534.3L1440.0 534.4L1446.0 535.5L1448.7 537.0L1451.6 540.0L1452.5 542.0L1453.2 545.0L1453.1 548.0L1451.8 552.0L1450.0 554.5L1447.0 556.6L1441.0 558.3L1428.0 558.5L1427.0 558.9L1426.8 572.0L1426.6 573.0L1426.0 573.5L1423.0 573.5L1422.0 573.1L1421.6 572.0ZM1428.0 537.8L1426.8 539.0L1427.0 554.3L1428.0 554.7L1440.0 554.6L1444.0 553.4L1446.8 551.0L1447.8 549.0L1448.1 545.0L1447.0 542.1L1445.0 539.8L1443.0 538.7L1439.0 537.9Z"/></g></svg>
+        </div>
+      </div>
+      <div class="band" data-a="0.1167" data-b="0.3">
+        <div class="cap cap-top" style="--sa:.92">
+          <h2 class="cap-h md split fx-lights" data-seed="11">We specialise in guiding British and European buyers to purchase property in Cyprus.</h2>
+          <p class="cap-sub">You choose the property. We take care of everything else.</p>
+          <p class="cap-actions"><a class="btn btn-primary" href="#consult">Book a free consultation</a><a class="btn btn-ghost" href="#how">How we work</a></p>
+        </div>
+      </div>
+
+      <div class="band" data-a="0.5941" data-b="0.6469">
         <div class="cap cap-title" style="--sa:.85">
-          <h1 class="country-h">Cyprus</h1>
+          <h2 class="country-h">Cyprus</h2>
         </div>
       </div>
       <div class="cue" aria-hidden="true">
@@ -1070,74 +1143,45 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
     <!-- the Cyprus chapters rise over the villa film; data-film is the second of film each one opens on -->
     <div class="tour-run">
 
-  <!-- why Cyprus: the client's six reasons -->
+  <!-- why Cyprus: life in the sun, in eight reasons -->
   <section class="sec" id="cy-why" aria-labelledby="cyw-h" data-reveal data-film="2.8">
     <div class="wrap">
       <span class="kicker rv">Why Cyprus</span>
-      <h2 class="h2 rv" style="--d:1" id="cyw-h">One of the world's most attractive markets for real estate investment</h2>
-      <p class="lede rv" style="--d:2">A European market, accessible entry prices, and demand coming from several directions at once.</p>
+      <h2 class="h2 rv" style="--d:1" id="cyw-h">Life is better in the sun.</h2>
+      <div class="ledger four">
+        <article class="led rv" style="--d:2"><div class="led-top"><span class="led-i" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2.5V5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg></span><h3>Over 300 days of sunshine a year</h3></div><p>Long, warm summers and mild winters make Cyprus liveable and enjoyable all twelve months.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
+        <article class="led rv" style="--d:3"><div class="led-top"><span class="led-i" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M18.5 5.5l-13 13"/><circle cx="7.5" cy="7.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg></span><h3>A tax-friendly environment</h3></div><p>Competitive personal and corporate tax rates, no inheritance tax, and an attractive regime for new residents.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
+        <article class="led rv" style="--d:4"><div class="led-top"><span class="led-i" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M17.5 6.4A7 7 0 1 0 17.5 17.6"/><path d="M4.5 10.2h9M4.5 13.8h9"/></svg></span><h3>A truly European home</h3></div><p>An EU member with the euro, strong legal protections and a stable property market.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
+        <article class="led rv" style="--d:5"><div class="led-top"><span class="led-i" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M20 11.5a8 8 0 0 1-11.7 7.1L4 19.8l1.2-4.1A8 8 0 1 1 20 11.5z"/><path d="M8.5 10h7M8.5 13h4.5"/></svg></span><h3>English is widely spoken</h3></div><p>A legal system based on English common law and a large, established British community.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
+        <article class="led rv" style="--d:6"><div class="led-top"><span class="led-i" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 3c.9 0 1.4.9 1.4 2v4.6l7.1 4.1v1.8l-7.1-2.1v4.1l2.1 1.6V21L12 20l-3.5 1v-1.9l2.1-1.6v-4.1l-7.1 2.1v-1.8l7.1-4.1V5c0-1.1.5-2 1.4-2z"/></svg></span><h3>Easy to get to</h3></div><p>Direct flights from the UK and major European cities.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
+        <article class="led rv" style="--d:7"><div class="led-top"><span class="led-i" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="8" cy="15.5" r="4"/><path d="M11 12.5l8.5-8.5M16.5 7l2 2M14 9.5l2 2"/></svg></span><h3>Residency routes</h3></div><p>Options for non-EU buyers, including permanent residency for qualifying purchases.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
+        <article class="led rv" style="--d:8"><div class="led-top"><span class="led-i" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 3l7 3v5.5c0 4.4-3 8-7 9.5-4-1.5-7-5.1-7-9.5V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Safe and welcoming</h3></div><p>Low crime, a relaxed pace of life, and good healthcare and schools.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
+        <article class="led rv" style="--d:9"><div class="led-top"><span class="led-i" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 11l8-6.5 8 6.5"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/></svg></span><h3>A strong property market</h3></div><p>Consistent demand from holiday buyers, relocators and investors.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- the British community in Paphos; its figures join it, in the gold counting tiles, once the client sends them -->
+  <section class="sec" id="cy-community" aria-labelledby="cyc-h" data-reveal data-film="14.5">
+    <div class="wrap">
+      <span class="kicker rv">The British community in Paphos</span>
+      <h2 class="h2 rv" style="--d:1" id="cyc-h">You won't be starting from scratch.</h2>
+      <p class="lede rv" style="--d:2">Paphos is home to one of the largest British communities in Cyprus, with social clubs, English-speaking services, schools and a community that has welcomed newcomers for decades.</p>
+    </div>
+  </section>
+
+  <!-- how we work: five steps, from the first conversation to the keys -->
+  <section class="sec" id="how" aria-labelledby="how-h" data-reveal data-film="18.9">
+    <div class="wrap">
+      <span class="kicker rv">How we work</span>
+      <h2 class="h2 rv" style="--d:1" id="how-h">One team, from first search to your keys.</h2>
       <div class="ledger three">
-        <article class="led rv" style="--d:2"><div class="led-top"><span class="led-n">01</span><h3>Easy to reach</h3></div><p>A short 40-minute flight makes it easy to get to the property and stay close to your investment.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
-        <article class="led rv" style="--d:3"><div class="led-top"><span class="led-n">02</span><h3>A European market, in euros</h3></div><p>Cyprus is a member of the European Union, and offers exposure to a European property market and a strong euro-based economy.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
-        <article class="led rv" style="--d:4"><div class="led-top"><span class="led-n">03</span><h3>Cyprus is expected to join Schengen</h3></div><p>Cyprus is working to complete its entry into the Schengen Area. Joining is expected to strengthen the country's accessibility and appeal, and to support demand for property from foreign investors.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
-        <article class="led rv" style="--d:5"><div class="led-top"><span class="led-n">04</span><h3>Residency routes</h3></div><p>There are residency routes for non-EU citizens, including permanent residency for investors who meet the conditions and the required investment amount.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
-        <article class="led rv" style="--d:6"><div class="led-top"><span class="led-n">05</span><h3>Accessible entry prices</h3></div><p>A range of projects and properties at prices that are accessible compared with Europe's main markets.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
-        <article class="led rv" style="--d:7"><div class="led-top"><span class="led-n">06</span><h3>Tourism and international demand</h3></div><p>Strong tourism, alongside families, students, workers, and international companies, supports demand for property.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
+        <article class="led rv" style="--d:2"><div class="led-top"><span class="led-n">01</span><h3>We listen</h3></div><p>Your lifestyle, budget and priorities, in an unhurried first conversation.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
+        <article class="led rv" style="--d:3"><div class="led-top"><span class="led-n">02</span><h3>We search</h3></div><p>Properties matched precisely to you, not a catalogue of everything available.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
+        <article class="led rv" style="--d:4"><div class="led-top"><span class="led-n">03</span><h3>We guide</h3></div><p>Viewings in person or by video, with honest advice at every step.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
+        <article class="led rv" style="--d:5"><div class="led-top"><span class="led-n">04</span><h3>We connect you with the right people</h3></div><p>Trusted local lawyers, mortgage support through the banks, and property management companies.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
+        <article class="led rv" style="--d:6"><div class="led-top"><span class="led-n">05</span><h3>We stay with you</h3></div><p>Through completion, and beyond.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
       </div>
-      <p class="note rv" style="--d:8">The figures on this page are based on PwC, one of the world's leading accounting and advisory networks.</p>
-    </div>
-  </section>
-
-  <section class="sec" id="cy-schengen" aria-labelledby="cys-h" data-reveal data-film="7">
-    <div class="wrap">
-      <span class="kicker rv">Schengen</span>
-      <h2 class="h2 rv" style="--d:1" id="cys-h">What is the Schengen Area, and why does it matter?</h2>
-      <p class="lede rv" style="--d:2">The Schengen Area allows travel between member countries without routine internal border checks. Cyprus joining is expected to strengthen its connection to Europe and make travel between Cyprus and Schengen countries easier.</p>
-      <div class="ledger three">
-        <article class="led rv" style="--d:3"><div class="led-top"><span class="led-n">01</span><h3>Better access to Europe</h3></div><p>Easier, simpler travel between Cyprus and Schengen countries.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
-        <article class="led rv" style="--d:4"><div class="led-top"><span class="led-n">02</span><h3>Stronger international appeal</h3></div><p>A deeper European connection for tourists, business people, and international residents.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
-        <article class="led rv" style="--d:5"><div class="led-top"><span class="led-n">03</span><h3>A closer tie to Europe</h3></div><p>Another step in Cyprus's integration with Europe.</p><svg class="horizon" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="9" x2="100" y2="9" pathLength="1"/><line class="shine" x1="0" y1="9" x2="100" y2="9" pathLength="1"/></svg></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- a market in a growth spurt: four numbers you fly past, then the point of it all -->
-  <section class="journey growth" id="cy-market" aria-labelledby="cym-h" data-unit="36" data-film="9.6">
-    <div class="j-stage">
-      <div class="j-world">
-        <div class="j-item" data-stop data-p="0,0,0"><div class="j-in j-say"><span class="kicker">The market in Cyprus</span><h2 class="j-h" id="cym-h">A growing market</h2></div></div>
-        <div class="j-item" data-stop data-hold="1.2" data-p="0,0,1300"><div class="j-in j-say"><div class="j-floor" aria-hidden="true"><i></i></div><p class="j-num" dir="ltr">€<span data-jcount="6.5" data-jdec="1">6.5</span>B</p><h3 class="j-h sm">Record deal value in Cyprus</h3><p>The value of real estate deals in Cyprus reached €6.5 billion in 2025, up 8% from €6.0 billion in 2024.</p></div></div>
-        <div class="j-item" data-stop data-hold="1.2" data-p="0,0,2600"><div class="j-in j-say"><p class="j-num" dir="ltr"><span data-jcount="25600">25,600</span></p><h3 class="j-h sm">Real estate deals in 2025</h3><p>The number of deals in Cyprus grew 4%, from 24,700 in 2024 to 25,600 in 2025.</p></div></div>
-        <div class="j-item" data-stop data-hold="1.2" data-p="0,0,3900"><div class="j-in j-say"><p class="j-num" dir="ltr">+<span data-jcount="16">16</span>%</p><h3 class="j-h sm">Rising demand from foreign buyers</h3><p>Demand from foreign buyers grew 16% in 2025, with Paphos, Larnaca, and Limassol together accounting for about 80% of the growth.</p></div></div>
-        <div class="j-item" data-stop data-hold="1.2" data-p="0,0,5200"><div class="j-in j-say"><p class="j-num" dir="ltr">€<span data-jcount="4.5" data-jdec="1">4.5</span>B</p><h3 class="j-h sm">Homes, the leading market</h3><p>Residential property reached a deal value of €4.5 billion in 2025, 69% of the whole market.</p></div></div>
-        <div class="j-item" data-stop data-p="0,0,6500"><div class="j-in j-say"><p class="j-quote">The goal isn't only to buy a property in Cyprus. <em>It's to enter the right area, in the right project, at the right time.</em></p><p class="j-src">Source: PwC Cyprus, Cyprus Real Estate Market: Year in Review 2025 (April 2026)</p></div></div>
-      </div>
-      <div class="j-rail" aria-hidden="true"></div>
-    </div>
-  </section>
-
-  <!-- after the numbers, Itai in his own words, on the way up to the roof -->
-  <section class="sec say" id="cy-ground" aria-labelledby="cyg-h" data-reveal data-film="18.9">
-    <div class="wrap">
-      <h2 class="h2 rv" id="cyg-h">The numbers tell part of the story.</h2>
-      <p class="formula rv" style="--d:1">The rest you only learn on the ground.</p>
-    </div>
-  </section>
-
-  <section class="sec say" id="cy-there" aria-labelledby="cyt-h" data-reveal data-film="21.6">
-    <div class="wrap say-grid">
-      <div>
-        <h2 class="h2 rv" id="cyt-h">And I was there.</h2>
-        <p class="lede rv" style="--d:1">I lived in Cyprus, got to know the developers, walked through the projects, and accompanied deals in Paphos and Limassol. That's where I learned to spot what doesn't show up in any table or report.</p>
-      </div>
-      <figure class="say-photo rv" style="--d:2"><img src="assets/itai.jpg" alt="Itai Hazan in front of a new villa with timber cladding and glass balconies" loading="lazy" decoding="async" width="1200" height="1600"></figure>
-    </div>
-  </section>
-
-  <section class="sec say" id="cy-picked" aria-labelledby="cyk-h" data-reveal data-film="24.2">
-    <div class="wrap">
-      <h2 class="h2 rv" id="cyk-h">I went on a journey there to understand, across the whole market, where it's truly worth putting the money.</h2>
-      <p class="formula rv" style="--d:1">And the investments we present here, I handpicked.</p>
     </div>
   </section>
 
@@ -1152,59 +1196,41 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
       <!-- a real viewing with clients, behind the five things we do for them -->
       <div class="bd" aria-hidden="true"><div class="bd-in"><video class="bd-v" muted loop playsinline preload="none" tabindex="-1" disablepictureinpicture style="object-position:50% 45%" poster="assets/villa-clients-poster.jpg" data-src="assets/villa-clients.mp4"></video></div></div>
       <div class="j-world">
-        <div class="j-item" data-stop data-p="0,0,0"><div class="j-in j-say"><h2 class="j-h" id="cy1-h">The complete package for your investment</h2></div></div>
-        <article class="j-item" data-stop data-p="-0.18,0,1300" data-pm="-0.03,0,1300" data-r="0,24"><div class="j-in j-card"><span class="n">01</span><h3>Tailored to you</h3><p>The right investment for your means and your cash flow.</p></div></article>
-        <article class="j-item" data-stop data-p="0.18,0,2500" data-pm="0.03,0,2500" data-r="0,-24"><div class="j-in j-card"><span class="n">02</span><h3>A law firm, connected</h3><p>Full legal support, all the way to the transfer of ownership.</p></div></article>
-        <article class="j-item" data-stop data-p="-0.18,0,3700" data-pm="-0.03,0,3700" data-r="0,24"><div class="j-in j-card"><span class="n">03</span><h3>Property managers, connected</h3><p>Tenants, maintenance, and rent collection, without the headache.</p></div></article>
-        <article class="j-item" data-stop data-p="0.18,0,4900" data-pm="0.03,0,4900" data-r="0,-24"><div class="j-in j-card"><span class="n">04</span><h3>Help opening an account</h3><p>Opening a bank account in Cyprus, quickly and simply.</p></div></article>
+        <div class="j-item" data-stop data-p="0,0,0"><div class="j-in j-say"><h2 class="j-h" id="cy1-h">The complete package</h2></div></div>
+        <article class="j-item" data-stop data-p="-0.18,0,1300" data-pm="-0.03,0,1300" data-r="0,24"><div class="j-in j-card"><span class="n">01</span><h3>Tailored to you</h3><p>The right property for your needs, budget and plans.</p></div></article>
+        <article class="j-item" data-stop data-p="0.18,0,2500" data-pm="0.03,0,2500" data-r="0,-24"><div class="j-in j-card"><span class="n">02</span><h3>Local lawyers, recommended</h3><p>Full legal support, all the way to the transfer of ownership.</p></div></article>
+        <article class="j-item" data-stop data-p="-0.18,0,3700" data-pm="-0.03,0,3700" data-r="0,24"><div class="j-in j-card"><span class="n">03</span><h3>Property management, connected</h3><p>Tenants, maintenance and rent collection, without the headache.</p></div></article>
+        <article class="j-item" data-stop data-p="0.18,0,4900" data-pm="0.03,0,4900" data-r="0,-24"><div class="j-in j-card"><span class="n">04</span><h3>Help opening a bank account</h3><p>Opening a bank account in Cyprus, quickly and simply.</p></div></article>
         <article class="j-item" data-stop data-p="-0.18,0,6100" data-pm="-0.03,0,6100" data-r="0,24"><div class="j-in j-card"><span class="n">05</span><h3>Help getting a mortgage</h3><p>Support with the banks until it is approved.</p></div></article>
-        <div class="j-item" data-stop data-hold="1.2" data-p="0,0,7300"><div class="j-in j-say"><p class="j-quote">You invest. <em>We take care of the rest.</em></p></div></div>
+        <div class="j-item" data-stop data-hold="1.2" data-p="0,0,7300"><div class="j-in j-say"><p class="j-quote">You choose the property. <em>We take care of the rest.</em></p></div></div>
       </div>
       <div class="j-rail" aria-hidden="true"></div>
     </div>
   </section>
 
-  <!-- the founder's story -->
-  <section class="sec story" id="cy-story" aria-labelledby="cyst-h" data-reveal>
-    <!-- Itai on film behind his story: talking while the title stands clear, then on site with the plans
-         from the paragraph about checking every deal; the footage dims while you read and clears at the end -->
-    <div class="bd" aria-hidden="true" data-dim="#cy-story .story-grid">
-      <div class="bd-in">
-        <video class="bd-v" muted loop playsinline preload="none" tabindex="-1" disablepictureinpicture poster="assets/itai-talk-poster.jpg" data-src="assets/itai-talk.mp4"></video>
-        <img class="bd-v" src="assets/itai.jpg" alt="" loading="lazy" decoding="async" width="1200" height="1600" data-at="#cy-story .story-body p:nth-of-type(1)">
-        <video class="bd-v" muted loop playsinline preload="none" tabindex="-1" disablepictureinpicture poster="assets/itai-plans-poster.jpg" data-src="assets/itai-plans.mp4" data-at="#cy-story .story-body p:nth-of-type(4)"></video>
+  <!-- about us: the founder, briefly, before the questions and the consultation that closes the page -->
+  <section class="sec say" id="about" aria-labelledby="ab-h" data-reveal>
+    <div class="wrap say-grid">
+      <div>
+        <span class="kicker rv">About us</span>
+        <h2 class="h2 rv" style="--d:1" id="ab-h">Itai Hazan</h2>
+        <p class="by rv" style="--d:2">Founder, Momentum Capital Group</p>
+        <p class="lede rv" style="--d:3">&ldquo;I live in Cyprus, and I help British and European families find homes here with care and honesty. Every client is treated as I&rsquo;d want my own family to be.&rdquo;</p>
       </div>
-    </div>
-    <div class="wrap story-intro">
-      <span class="kicker rv">My story</span>
-      <h2 class="h2 rv" style="--d:1" id="cyst-h">To understand the market, you have to be on the ground.</h2>
-      <p class="by rv" style="--d:2">Itai Hazan</p>
-    </div>
-    <div class="wrap story-grid story-one">
-      <div class="story-body">
-        <p class="rv" style="--d:2">It all started with family real estate deals that brought me to Paphos. The deeper I went into the market, the more I saw the change the city is going through and the potential in certain areas, and I decided to move there and get to know the market from the inside.</p>
-        <p class="rv" style="--d:3">For a year I lived Paphos day to day. I learned the neighborhoods, purchase and rental prices, where the demand is, the new projects, and the areas that are developing. Along the way I came to know the leading companies, the developers, and the attractive projects in the market in depth.</p>
-        <p class="rv" style="--d:4">My work expanded to Limassol too, where I accompanied and sold apartments and deepened my knowledge of the local real estate market.</p>
-        <p class="rv" style="--d:5">I don't show a client every project that comes my way. Every deal I choose to present is examined in depth: the company and developer behind it, the location, the purchase price against the area, the rental market, planned development nearby, and the numbers of the deal.</p>
-        <p class="rv" style="--d:6">From a wide supply of projects and apartments, I filter and choose the deals that I believe truly deserve a look, so the client doesn't have to go through hundreds of options and can focus on the ones that have already been filtered and checked.</p>
-        <p class="end rv" style="--d:7">Less noise. More time on the ground, more checking, more numbers.</p>
-      </div>
+      <figure class="say-photo rv" style="--d:2"><img src="assets/itai.jpg" alt="Itai Hazan, founder of Momentum Capital Group" loading="lazy" decoding="async" width="1200" height="1600"></figure>
     </div>
   </section>
-
-
-
 
   <section class="sec" id="faq" aria-labelledby="faq-h" data-reveal>
     <div class="faq">
       <span class="kicker rv">Questions</span>
-      <h2 class="h2 rv" style="--d:1" id="faq-h">What every buyer in Cyprus asks us first.</h2>
+      <h2 class="h2 rv" style="--d:1" id="faq-h">The questions every buyer asks first</h2>
       <div class="qa rv" style="--d:2">
-        <div class="q"><button type="button" aria-expanded="false" aria-controls="a1" id="q1">Will I actually get my title deed?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a1" role="region" aria-labelledby="q1" hidden><p>For a resale home with its own deed, the deed passes to you at the Land Registry when you complete. For new builds, deeds can take years, so we check the developer's permits and the project's status before you commit, and we make sure your contract is lodged at the Land Registry to protect you in the meantime.</p></div></div>
-        <div class="q"><button type="button" aria-expanded="false" aria-controls="a2" id="q2">Can I buy if I'm not from the EU?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a2" role="region" aria-labelledby="q2" hidden><p>Yes. You can buy a property without EU citizenship.</p></div></div>
-        <div class="q"><button type="button" aria-expanded="false" aria-controls="a4" id="q4">Does this home qualify for residency?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a4" role="region" aria-labelledby="q4" hidden><p>Only new builds bought from a developer, for at least &euro;300,000 plus VAT, qualify for the fast residency route. We mark every home that does, and your lawyer confirms it.</p></div></div>
-        <div class="q"><button type="button" aria-expanded="false" aria-controls="a5" id="q5">Whose side is the lawyer on?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a5" role="region" aria-labelledby="q5" hidden><p>Yours. We work with independent lawyers who act only for you, never for the seller or the developer.</p></div></div>
-        <div class="q"><button type="button" aria-expanded="false" aria-controls="a6" id="q6">Do I need to fly to Cyprus to buy?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a6" role="region" aria-labelledby="q6" hidden><p>No. We can run viewings by live video, and your lawyer can sign for you with a power of attorney. Most clients still like to visit once before they commit.</p></div></div>
+        <div class="q"><button type="button" aria-expanded="false" aria-controls="a1" id="q1">Will I receive my title deed?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a1" role="region" aria-labelledby="q1" hidden><p>Resale properties with a separate title deed are transferred at the Land Registry on completion. For new builds, deeds can take time, so before you commit we check the developer&rsquo;s permits and the project&rsquo;s status, and we make sure your sale contract is lodged at the Land Registry to protect your position in the meantime.</p></div></div>
+        <div class="q"><button type="button" aria-expanded="false" aria-controls="a2" id="q2">Can I buy as a non-EU citizen, for example from the UK?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a2" role="region" aria-labelledby="q2" hidden><p>Yes. Non-EU nationals, including UK citizens, can purchase property in Cyprus, subject to standard procedures. Your lawyer will confirm the details for your situation.</p></div></div>
+        <div class="q"><button type="button" aria-expanded="false" aria-controls="a3" id="q3">Does this property qualify for residency?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a3" role="region" aria-labelledby="q3" hidden><p>Only new builds bought from a developer for at least &euro;300,000 plus VAT qualify for the fast-track residency route. We flag every qualifying property, and your lawyer confirms eligibility.</p></div></div>
+        <div class="q"><button type="button" aria-expanded="false" aria-controls="a4" id="q4">Whose side is the lawyer on?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a4" role="region" aria-labelledby="q4" hidden><p>Yours. We work with independent lawyers who act solely for you, never for the seller or the developer.</p></div></div>
+        <div class="q"><button type="button" aria-expanded="false" aria-controls="a5" id="q5">Do I need to travel to Cyprus to buy?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a5" role="region" aria-labelledby="q5" hidden><p>No. We can host live video viewings, and your lawyer can sign on your behalf under power of attorney. Most clients still choose to visit once before committing.</p></div></div>
       </div>
     </div>
   </section>
@@ -1215,31 +1241,31 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
     <div class="bg" aria-hidden="true"></div>
     <div class="wrap consult-grid">
       <div>
-        <span class="kicker rv">Your first step</span>
-        <h2 class="h2 rv" style="--d:1" id="co-h">Book a private consultation.</h2>
-        <p class="lede rv" style="--d:2">Leave us your details and we'll get back to you. We'll get to know your needs and guide you to the investment that is right for you, precisely.</p>
+        <span class="kicker rv">Contact</span>
+        <h2 class="h2 rv" style="--d:1" id="co-h">Your first step: a private consultation</h2>
+        <p class="lede rv" style="--d:2">Leave your details and we'll be in touch to understand your goals and guide you towards the right home.</p>
         <ul class="contact-list rv" style="--d:3">
           <li><span class="k">Email</span><a class="js-email" href="#consult">Add your email before launch</a></li>
-          <li><span class="k">Phone</span><span class="js-phone">Add your phone before launch</span></li>
+          <li><span class="k">Phone / WhatsApp</span><span class="js-phone">Add your phone before launch</span></li>
         </ul>
       </div>
       <form class="form rv" style="--d:2" id="form" novalidate>
         <div class="fgrid">
-          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" placeholder="Full name" autocomplete="name" required></div>
+          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" placeholder="Full name" autocomplete="name" required></div>
           <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" dir="ltr" placeholder="you@example.com" autocomplete="email" required></div>
-          <div class="field full"><label for="f-phone">Phone or WhatsApp</label><input id="f-phone" name="phone" type="tel" dir="ltr" placeholder="+357 or +972 ..." autocomplete="tel"></div>
+          <div class="field full"><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" dir="ltr" placeholder="+44 ..." autocomplete="tel"></div>
           <div class="field"><label for="f-int">I'm interested in</label><select id="f-int" name="interest">
-            <optgroup label="Cyprus"><option value="cy-invest">A property to invest in</option><option value="cy-residency">A property for residency</option><option value="cy-relocation">A property to relocate to</option></optgroup>
+            <option value="holiday">A holiday home</option><option value="relocation">A home to relocate to</option><option value="investment">An investment property</option>
             <option value="unsure" selected>Not sure yet</option>
           </select></div>
-          <div class="field"><label for="f-bud">Equity to invest</label><select id="f-bud" name="budget"><option>Up to ₪500,000</option><option>₪500,000 to ₪1 million</option><option>₪1 to 2 million</option><option>₪2 to 5 million</option><option>Over ₪5 million</option></select></div>
+          <div class="field"><label for="f-bud">Budget</label><select id="f-bud" name="budget"><option>Up to &euro;150,000</option><option>&euro;150,000&ndash;300,000</option><option>&euro;300,000&ndash;600,000</option><option>&euro;600,000&ndash;1.2m</option><option>Over &euro;1.2m</option></select></div>
           <div class="field full"><label for="f-msg">Anything else?</label><textarea id="f-msg" name="message" placeholder="Areas, timing, questions"></textarea></div>
         </div>
-        <button class="btn btn-primary" type="submit">Request my consultation <span class="arrow" aria-hidden="true">&rarr;</span></button>
-        <p class="form-note">Sending opens your own email app with your request filled in.</p>
+        <button class="btn btn-primary" type="submit">Request a consultation <span class="arrow" aria-hidden="true">&rarr;</span></button>
+        <p class="form-note">Submitting opens your email app with your request pre-filled.</p>
         <div class="success" role="status" aria-live="polite">
           <h3>Nearly there.</h3>
-          <p>Your email app just opened with your request filled in. Press send, and we'll take it from there.</p>
+          <p>Your email app has opened with your request ready. Press send and we'll take it from there.</p>
         </div>
       </form>
     </div>
@@ -1251,17 +1277,27 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
     <div class="foot-grid">
       <div>
         <svg class="foot-logo" viewBox="0 0 1390 240" role="img" aria-label="Momentum Capital Group"><use href="#lockupSym"/></svg>
-        <p style="margin-top:22px;max-width:36ch">Villas and residency homes in Cyprus.</p>
+        <p style="margin-top:22px;max-width:36ch">Villas and apartments in Cyprus.</p>
       </div>
       <div>
         <h4>Contact</h4>
         <ul><li><a class="js-email" href="#consult">Add your email before launch</a></li><li class="js-phone">Add your phone before launch</li><li><a href="#consult">Book a consultation</a></li></ul>
       </div>
     </div>
-    <div class="fine"><span dir="ltr">&copy; 2026 Momentum Capital Group</span></div>
+    <div class="fine"><span dir="ltr">&copy; 2026 Momentum Capital Group</span><span class="disclaimer">This website is for information only and is not financial, legal or tax advice. Property values can go down as well as up.</span></div>
   </div>
 </footer>
 
+<!-- motion:lenis -->
+<script>/* Lenis 1.3.27, smooth scroll (MIT, darkroom.engineering, see tools/motion/lenis-LICENSE.txt) */
+(function(){var e=`1.3.27`;function t(e,t,n){return Math.max(e,Math.min(t,n))}function n(e,t,n){return(1-n)*e+n*t}function r(e,t,r,i){return n(e,t,1-Math.exp(-r*i))}function i(e,t){return(e%t+t)%t}var a=class{isRunning=!1;value=0;from=0;to=0;currentTime=0;lerp;duration;easing;onUpdate;advance(e){if(!this.isRunning)return;let n=!1;if(this.duration&&this.easing){this.currentTime+=e;let r=t(0,this.currentTime/this.duration,1);n=r>=1;let i=n?1:this.easing(r);this.value=this.from+(this.to-this.from)*i}else this.lerp?(this.value=r(this.value,this.to,this.lerp*60,e),Math.round(this.value)===Math.round(this.to)&&(this.value=this.to,n=!0)):(this.value=this.to,n=!0);n&&this.stop(),this.onUpdate?.(this.value,n)}stop(){this.isRunning=!1}fromTo(e,t,{lerp:n,duration:r,easing:i,onStart:a,onUpdate:o}){this.from=this.value=e,this.to=t,this.lerp=n,this.duration=r,this.easing=i,this.currentTime=0,this.isRunning=!0,a?.(),this.onUpdate=o}};function o(e,t){let n;return function(...r){clearTimeout(n),n=setTimeout(()=>{n=void 0,e.apply(this,r)},t)}}var s=class{width=0;height=0;scrollHeight=0;scrollWidth=0;debouncedResize;wrapperResizeObserver;contentResizeObserver;constructor(e,t,{autoResize:n=!0,debounce:r=250}={}){this.wrapper=e,this.content=t,n&&(this.debouncedResize=o(this.resize,r),this.wrapper instanceof Window?window.addEventListener(`resize`,this.debouncedResize):(this.wrapperResizeObserver=new ResizeObserver(this.debouncedResize),this.wrapperResizeObserver.observe(this.wrapper)),this.contentResizeObserver=new ResizeObserver(this.debouncedResize),this.contentResizeObserver.observe(this.content)),this.resize()}destroy(){this.wrapperResizeObserver?.disconnect(),this.contentResizeObserver?.disconnect(),this.wrapper===window&&this.debouncedResize&&window.removeEventListener(`resize`,this.debouncedResize)}resize=()=>{this.onWrapperResize(),this.onContentResize()};onWrapperResize=()=>{this.wrapper instanceof Window?(this.width=window.innerWidth,this.height=window.innerHeight):(this.width=this.wrapper.clientWidth,this.height=this.wrapper.clientHeight)};onContentResize=()=>{this.wrapper instanceof Window?(this.scrollHeight=this.content.scrollHeight,this.scrollWidth=this.content.scrollWidth):(this.scrollHeight=this.wrapper.scrollHeight,this.scrollWidth=this.wrapper.scrollWidth)};get limit(){return{x:this.scrollWidth-this.width,y:this.scrollHeight-this.height}}},c=class{events={};emit(e,...t){let n=this.events[e]||[];for(let e=0,r=n.length;e<r;e++)n[e]?.(...t)}on(e,t){return this.events[e]?this.events[e].push(t):this.events[e]=[t],()=>{this.events[e]=this.events[e]?.filter(e=>t!==e)}}off(e,t){this.events[e]=this.events[e]?.filter(e=>t!==e)}destroy(){this.events={}}};let l={passive:!1};function u(e,t){return e===1?16.666666666666668:e===2?t:1}var d=class{touchStart={x:0,y:0};lastDelta={x:0,y:0};window={width:0,height:0};emitter=new c;constructor(e,t={wheelMultiplier:1,touchMultiplier:1}){this.element=e,this.options=t,window.addEventListener(`resize`,this.onWindowResize),this.onWindowResize(),this.element.addEventListener(`wheel`,this.onWheel,l),this.element.addEventListener(`touchstart`,this.onTouchStart,l),this.element.addEventListener(`touchmove`,this.onTouchMove,l),this.element.addEventListener(`touchend`,this.onTouchEnd,l)}on(e,t){return this.emitter.on(e,t)}destroy(){this.emitter.destroy(),window.removeEventListener(`resize`,this.onWindowResize),this.element.removeEventListener(`wheel`,this.onWheel,l),this.element.removeEventListener(`touchstart`,this.onTouchStart,l),this.element.removeEventListener(`touchmove`,this.onTouchMove,l),this.element.removeEventListener(`touchend`,this.onTouchEnd,l)}onTouchStart=e=>{let{clientX:t,clientY:n}=e.targetTouches?e.targetTouches[0]:e;this.touchStart.x=t,this.touchStart.y=n,this.lastDelta={x:0,y:0},this.emitter.emit(`scroll`,{deltaX:0,deltaY:0,event:e})};onTouchMove=e=>{let{clientX:t,clientY:n}=e.targetTouches?e.targetTouches[0]:e,r=-(t-this.touchStart.x)*this.options.touchMultiplier,i=-(n-this.touchStart.y)*this.options.touchMultiplier;this.touchStart.x=t,this.touchStart.y=n,this.lastDelta={x:r,y:i},this.emitter.emit(`scroll`,{deltaX:r,deltaY:i,event:e})};onTouchEnd=e=>{this.emitter.emit(`scroll`,{deltaX:this.lastDelta.x,deltaY:this.lastDelta.y,event:e})};onWheel=e=>{let{deltaX:t,deltaY:n,deltaMode:r}=e,i=u(r,this.window.width),a=u(r,this.window.height);t*=i,n*=a,t*=this.options.wheelMultiplier,n*=this.options.wheelMultiplier,this.emitter.emit(`scroll`,{deltaX:t,deltaY:n,event:e})};onWindowResize=()=>{this.window={width:window.innerWidth,height:window.innerHeight}}};let f=e=>Math.min(1,1.001-2**(-10*e));var p=class{_isScrolling=!1;_isStopped=!1;_isLocked=!1;_preventNextNativeScrollEvent=!1;_resetVelocityTimeout=null;_rafId=null;_isDraggingSelection=!1;reducedMotionMediaQuery=window.matchMedia(`(prefers-reduced-motion: reduce)`);isTouching;isIos;time=0;userData={};lastVelocity=0;velocity=0;direction=0;options;targetScroll;animatedScroll;animate=new a;emitter=new c;dimensions;virtualScroll;constructor({wrapper:t=window,content:n=document.documentElement,eventsTarget:r=t,smoothWheel:i=!0,syncTouch:a=!1,syncTouchLerp:o=.075,touchInertiaExponent:c=1.7,duration:l,easing:u,lerp:p=.1,infinite:m=!1,orientation:h=`vertical`,gestureOrientation:g=h===`horizontal`?`both`:`vertical`,touchMultiplier:_=1,wheelMultiplier:v=1,autoResize:y=!0,prevent:b,virtualScroll:x,overscroll:S=!0,autoRaf:C=!1,anchors:w=!1,autoToggle:T=!1,allowNestedScroll:E=!1,__experimental__naiveDimensions:D=!1,naiveDimensions:O=D,stopInertiaOnNavigate:k=!1,respectReducedMotion:A=!0}={}){window.lenisVersion=e,window.lenis||(window.lenis={}),window.lenis.version=e,h===`horizontal`&&(window.lenis.horizontal=!0),a===!0&&(window.lenis.touch=!0),this.isIos=/(iPad|iPhone|iPod)/g.test(navigator.userAgent),(!t||t===document.documentElement)&&(t=window),typeof l==`number`&&typeof u!=`function`?u=f:typeof u==`function`&&typeof l!=`number`&&(l=1),this.options={wrapper:t,content:n,eventsTarget:r,smoothWheel:i,syncTouch:a,syncTouchLerp:o,touchInertiaExponent:c,duration:l,easing:u,lerp:p,infinite:m,gestureOrientation:g,orientation:h,touchMultiplier:_,wheelMultiplier:v,autoResize:y,prevent:b,virtualScroll:x,overscroll:S,autoRaf:C,anchors:w,autoToggle:T,allowNestedScroll:E,naiveDimensions:O,stopInertiaOnNavigate:k,respectReducedMotion:A},this.dimensions=new s(t,n,{autoResize:y}),this.updateClassName(),this.targetScroll=this.animatedScroll=this.actualScroll,this.options.wrapper.addEventListener(`scroll`,this.onNativeScroll),this.options.wrapper.addEventListener(`scrollend`,this.onScrollEnd,{capture:!0}),(this.options.anchors||this.options.stopInertiaOnNavigate)&&this.options.wrapper.addEventListener(`click`,this.onClick),this.options.wrapper.addEventListener(`pointerdown`,this.onPointerDown),this.virtualScroll=new d(r,{touchMultiplier:_,wheelMultiplier:v}),this.virtualScroll.on(`scroll`,this.onVirtualScroll),this.options.autoToggle&&(this.checkOverflow(),this.rootElement.addEventListener(`transitionend`,this.onTransitionEnd)),this.options.autoRaf&&(this._rafId=requestAnimationFrame(this.raf))}destroy(){this.emitter.destroy(),this._resetVelocityTimeout!==null&&(clearTimeout(this._resetVelocityTimeout),this._resetVelocityTimeout=null),this.options.wrapper.removeEventListener(`scroll`,this.onNativeScroll),this.options.wrapper.removeEventListener(`scrollend`,this.onScrollEnd,{capture:!0}),this.options.wrapper.removeEventListener(`pointerdown`,this.onPointerDown),(this.options.anchors||this.options.stopInertiaOnNavigate)&&this.options.wrapper.removeEventListener(`click`,this.onClick),this.virtualScroll.destroy(),this.dimensions.destroy(),this.cleanUpClassName(),this._rafId&&cancelAnimationFrame(this._rafId)}on(e,t){return this.emitter.on(e,t)}off(e,t){return this.emitter.off(e,t)}onScrollEnd=e=>{e instanceof CustomEvent||(this.isScrolling===`smooth`||this.isScrolling===!1)&&e.stopPropagation()};dispatchScrollendEvent=()=>{this.options.wrapper.dispatchEvent(new CustomEvent(`scrollend`,{bubbles:this.options.wrapper===window,detail:{lenisScrollEnd:!0}}))};get overflow(){let e=this.isHorizontal?`overflow-x`:`overflow-y`;return getComputedStyle(this.rootElement)[e]}checkOverflow(){[`hidden`,`clip`].includes(this.overflow)?this.internalStop():this.internalStart()}onTransitionEnd=e=>{e.propertyName?.includes(`overflow`)&&e.target===this.rootElement&&this.checkOverflow()};setScroll(e){this.isHorizontal?this.options.wrapper.scrollTo({left:e,behavior:`instant`}):this.options.wrapper.scrollTo({top:e,behavior:`instant`})}onClick=e=>{let t=e.composedPath().filter(e=>e instanceof HTMLAnchorElement&&e.href).map(e=>new URL(e.href)),n=new URL(window.location.href);if(this.options.anchors){let e=t.find(e=>n.host===e.host&&n.pathname===e.pathname&&e.hash);if(e){let t=typeof this.options.anchors==`object`&&this.options.anchors?this.options.anchors:void 0,n=decodeURIComponent(e.hash);this.scrollTo(n,t);return}}if(this.options.stopInertiaOnNavigate&&t.some(e=>n.host===e.host&&n.pathname!==e.pathname)){this.reset();return}};onPointerDown=e=>{e.button===1&&this.reset()};isTouchOnSelectionHandle(e){let t=window.getSelection();if(!t||t.isCollapsed||t.rangeCount===0)return!1;let n=e.targetTouches[0]??e.changedTouches[0];if(!n)return!1;let r=t.getRangeAt(0).getClientRects();if(r.length===0)return!1;let i=r[0],a=r[r.length-1],o=Math.hypot(n.clientX-i.left,n.clientY-i.top)<=40,s=Math.hypot(n.clientX-a.right,n.clientY-a.bottom)<=40;return o||s}onVirtualScroll=e=>{if(typeof this.options.virtualScroll==`function`&&this.options.virtualScroll(e)===!1)return;let{deltaX:t,deltaY:n,event:r}=e;if(this.emitter.emit(`virtual-scroll`,{deltaX:t,deltaY:n,event:r}),r.ctrlKey||r.lenisStopPropagation)return;let i=r.type.includes(`touch`),a=r.type.includes(`wheel`);if(i&&this.isIos&&(r.type===`touchstart`&&(this._isDraggingSelection=this.isTouchOnSelectionHandle(r)),this._isDraggingSelection)){r.type===`touchend`&&(this._isDraggingSelection=!1);return}this.isTouching=r.type===`touchstart`||r.type===`touchmove`;let o=t===0&&n===0;if(this.options.syncTouch&&i&&r.type===`touchstart`&&o&&!this.isStopped&&!this.isLocked){this.reset();return}let s=this.options.gestureOrientation===`vertical`&&n===0||this.options.gestureOrientation===`horizontal`&&t===0;if(o||s)return;let c=r.composedPath();c=c.slice(0,c.indexOf(this.rootElement));let l=this.options.prevent,u=Math.abs(t)>=Math.abs(n)?`horizontal`:`vertical`;if(c.find(e=>e instanceof HTMLElement&&(typeof l==`function`&&l?.(e)||e.hasAttribute?.(`data-lenis-prevent`)||u===`vertical`&&e.hasAttribute?.(`data-lenis-prevent-vertical`)||u===`horizontal`&&e.hasAttribute?.(`data-lenis-prevent-horizontal`)||i&&e.hasAttribute?.(`data-lenis-prevent-touch`)||a&&e.hasAttribute?.(`data-lenis-prevent-wheel`)||this.options.allowNestedScroll&&this.hasNestedScroll(e,{deltaX:t,deltaY:n}))))return;if(this.isStopped||this.isLocked){r.cancelable&&r.preventDefault();return}if(!(this.options.syncTouch&&i||this.options.smoothWheel&&a)){this.isScrolling=`native`,this.animate.stop(),r.lenisStopPropagation=!0;return}let d=n;this.options.gestureOrientation===`both`?d=Math.abs(n)>Math.abs(t)?n:t:this.options.gestureOrientation===`horizontal`&&(d=t),(!this.options.overscroll||this.options.infinite||this.options.wrapper!==window&&this.limit>0&&(this.animatedScroll>0&&this.animatedScroll<this.limit||this.animatedScroll===0&&n>0||this.animatedScroll===this.limit&&n<0))&&(r.lenisStopPropagation=!0),r.cancelable&&r.preventDefault();let f=i&&this.options.syncTouch,p=i&&r.type===`touchend`;p&&(d=Math.sign(d)*Math.abs(this.velocity)**this.options.touchInertiaExponent),this.scrollTo(this.targetScroll+d,{programmatic:!1,...f?{lerp:p?this.options.syncTouchLerp:1}:{lerp:this.options.lerp,duration:this.options.duration,easing:this.options.easing}})};resize(){this.dimensions.resize(),this.animatedScroll=this.targetScroll=this.actualScroll,this.emit()}emit(){this.emitter.emit(`scroll`,this)}onNativeScroll=()=>{if(this._resetVelocityTimeout!==null&&(clearTimeout(this._resetVelocityTimeout),this._resetVelocityTimeout=null),this._preventNextNativeScrollEvent){this._preventNextNativeScrollEvent=!1;return}if(this.isScrolling===!1||this.isScrolling===`native`){let e=this.animatedScroll;this.animatedScroll=this.targetScroll=this.actualScroll,this.lastVelocity=this.velocity,this.velocity=this.animatedScroll-e,this.direction=Math.sign(this.animatedScroll-e),this.isStopped||(this.isScrolling=`native`),this.emit(),this.velocity!==0&&(this._resetVelocityTimeout=setTimeout(()=>{this.lastVelocity=this.velocity,this.velocity=0,this.isScrolling=!1,this.emit()},400))}};reset(){this.isLocked=!1,this.isScrolling=!1,this.animatedScroll=this.targetScroll=this.actualScroll,this.lastVelocity=this.velocity=0,this.animate.stop()}start(){if(this.isStopped){if(this.options.autoToggle){this.rootElement.style.removeProperty(`overflow`);return}this.internalStart()}}internalStart(){this.isStopped&&(this.reset(),this.isStopped=!1,this.emit())}stop(){if(!this.isStopped){if(this.options.autoToggle){this.rootElement.style.setProperty(`overflow`,`clip`);return}this.internalStop()}}internalStop(){this.isStopped||(this.reset(),this.isStopped=!0,this.emit())}raf=e=>{let t=e-(this.time||e);this.time=e,this.animate.advance(t*.001),this.options.autoRaf&&(this._rafId=requestAnimationFrame(this.raf))};scrollTo(e,{offset:n=0,immediate:r=!1,lock:i=!1,programmatic:a=!0,lerp:o=a?this.options.lerp:void 0,duration:s=a?this.options.duration:void 0,easing:c=a?this.options.easing:void 0,onStart:l,onComplete:u,force:d=!1,userData:p}={}){if(this.prefersReducedMotion&&(a?r=!0:(o=1,s=void 0,c=void 0)),(this.isStopped||this.isLocked)&&!d)return;let m=e,h=n;if(typeof m==`string`&&[`top`,`left`,`start`,`#`].includes(m))m=0;else if(typeof m==`string`&&[`bottom`,`right`,`end`].includes(m))m=this.limit;else{let e=null;if(typeof m==`string`?(e=m.startsWith(`#`)?document.getElementById(m.slice(1)):document.querySelector(m),e||(m===`#top`?m=0:console.warn(`Lenis: Target not found`,m))):m instanceof Element&&(e=m),e){if(this.options.wrapper!==window){let e=this.rootElement.getBoundingClientRect();h-=this.isHorizontal?e.left:e.top}let t=e.getBoundingClientRect(),n=getComputedStyle(e),r=this.isHorizontal?Number.parseFloat(n.scrollMarginLeft):Number.parseFloat(n.scrollMarginTop),i=getComputedStyle(this.rootElement),a=this.isHorizontal?Number.parseFloat(i.scrollPaddingLeft):Number.parseFloat(i.scrollPaddingTop);m=(this.isHorizontal?t.left:t.top)+this.animatedScroll-(Number.isNaN(r)?0:r)-(Number.isNaN(a)?0:a)}}if(typeof m==`number`){if(m+=h,this.options.infinite){if(a){this.targetScroll=this.animatedScroll=this.scroll;let e=m-this.animatedScroll;e>this.limit/2?m-=this.limit:e<-this.limit/2&&(m+=this.limit)}}else m=t(0,m,this.limit);if(m===this.targetScroll){l?.(this),u?.(this);return}if(this.userData=p??{},r){this.animatedScroll=this.targetScroll=m,this.setScroll(this.scroll),this.reset(),this.preventNextNativeScrollEvent(),this.emit(),u?.(this),this.userData={},requestAnimationFrame(()=>{this.dispatchScrollendEvent()});return}a||(this.targetScroll=m),typeof s==`number`&&typeof c!=`function`?c=f:typeof c==`function`&&typeof s!=`number`&&(s=1),this.animate.fromTo(this.animatedScroll,m,{duration:s,easing:c,lerp:o,onStart:()=>{i&&(this.isLocked=!0),this.isScrolling=`smooth`,l?.(this)},onUpdate:(e,t)=>{this.isScrolling=`smooth`,this.lastVelocity=this.velocity,this.velocity=e-this.animatedScroll,this.direction=Math.sign(this.velocity),this.animatedScroll=e,this.setScroll(this.scroll),a&&(this.targetScroll=e),t||this.emit(),t&&(this.reset(),this.emit(),u?.(this),this.userData={},requestAnimationFrame(()=>{this.dispatchScrollendEvent()}),this.preventNextNativeScrollEvent())}})}}preventNextNativeScrollEvent(){this._preventNextNativeScrollEvent=!0,requestAnimationFrame(()=>{this._preventNextNativeScrollEvent=!1})}hasNestedScroll(e,{deltaX:t,deltaY:n}){let r=Date.now();e._lenis||={};let i=e._lenis,a,o,s,c,l,u,d,f,p,m;if(r-(i.time??0)>2e3){i.time=Date.now();let t=window.getComputedStyle(e);if(i.computedStyle=t,a=[`auto`,`overlay`,`scroll`].includes(t.overflowX),o=[`auto`,`overlay`,`scroll`].includes(t.overflowY),l=[`auto`].includes(t.overscrollBehaviorX),u=[`auto`].includes(t.overscrollBehaviorY),i.hasOverflowX=a,i.hasOverflowY=o,!(a||o))return!1;d=e.scrollWidth,f=e.scrollHeight,p=e.clientWidth,m=e.clientHeight,s=d>p,c=f>m,i.isScrollableX=s,i.isScrollableY=c,i.scrollWidth=d,i.scrollHeight=f,i.clientWidth=p,i.clientHeight=m,i.hasOverscrollBehaviorX=l,i.hasOverscrollBehaviorY=u}else s=i.isScrollableX,c=i.isScrollableY,a=i.hasOverflowX,o=i.hasOverflowY,d=i.scrollWidth,f=i.scrollHeight,p=i.clientWidth,m=i.clientHeight,l=i.hasOverscrollBehaviorX,u=i.hasOverscrollBehaviorY;if(!(a&&s||o&&c))return!1;let h=Math.abs(t)>=Math.abs(n)?`horizontal`:`vertical`,g,_,v,y,b,x;if(h===`horizontal`)g=Math.round(e.scrollLeft),_=d-p,v=t,y=a,b=s,x=l;else if(h===`vertical`)g=Math.round(e.scrollTop),_=f-m,v=n,y=o,b=c,x=u;else return!1;return!x&&(g>=_||g<=0)?!0:(v>0?g<_:g>0)&&y&&b}get rootElement(){return this.options.wrapper===window?document.documentElement:this.options.wrapper}get limit(){return this.options.naiveDimensions?this.isHorizontal?this.rootElement.scrollWidth-this.rootElement.clientWidth:this.rootElement.scrollHeight-this.rootElement.clientHeight:this.dimensions.limit[this.isHorizontal?`x`:`y`]}get isHorizontal(){return this.options.orientation===`horizontal`}get actualScroll(){let e=this.options.wrapper;return this.isHorizontal?e.scrollX??e.scrollLeft:e.scrollY??e.scrollTop}get scroll(){return this.options.infinite?i(this.animatedScroll,this.limit):this.animatedScroll}get progress(){return this.limit===0?1:this.scroll/this.limit}get isScrolling(){return this._isScrolling}set isScrolling(e){this._isScrolling!==e&&(this._isScrolling=e,this.updateClassName())}get isStopped(){return this._isStopped}set isStopped(e){this._isStopped!==e&&(this._isStopped=e,this.updateClassName())}get isLocked(){return this._isLocked}set isLocked(e){this._isLocked!==e&&(this._isLocked=e,this.updateClassName())}get isSmooth(){return this.isScrolling===`smooth`}get prefersReducedMotion(){return this.options.respectReducedMotion&&this.reducedMotionMediaQuery.matches}get className(){let e=`lenis`;return this.options.autoToggle&&(e+=` lenis-autoToggle`),this.isStopped&&(e+=` lenis-stopped`),this.isLocked&&(e+=` lenis-locked`),this.isScrolling&&(e+=` lenis-scrolling`),this.isScrolling===`smooth`&&(e+=` lenis-smooth`),e}updateClassName(){this.cleanUpClassName(),this.className.split(` `).forEach(e=>{this.rootElement.classList.add(e)})}cleanUpClassName(){for(let e of Array.from(this.rootElement.classList))(e===`lenis`||e.startsWith(`lenis-`))&&this.rootElement.classList.remove(e)}};globalThis.Lenis=p,globalThis.Lenis.prototype=p.prototype})();
+</script>
+<script>
+/* the wheel scrolls smoothly; touch keeps the phone's own scrolling, and anyone who asked for less motion keeps the
+   browser's. The page's links make their own jump, so Lenis leaves them alone. */
+(function () { try { if (window.Lenis && !matchMedia('(prefers-reduced-motion: reduce)').matches) window.__lenis = new Lenis({ autoRaf: true }); } catch (e) {} })();
+</script>
+<!-- /motion:lenis -->
 <script>
 (() => {
 'use strict';
@@ -1275,20 +1311,23 @@ const T = {
   needName: 'Please add your name.',
   needEmail: 'Please add a valid email.',
   subject: 'Private consultation request: ',
-  name: 'Name', email: 'Email', phone: 'Phone or WhatsApp',
-  interest: 'Interested in', budget: 'Equity to invest'
+  name: 'Name', email: 'Email', phone: 'Phone / WhatsApp',
+  interest: 'Interested in', budget: 'Budget'
 };
 /* ---------- this page's film ---------- */
 
 
-/* Cyprus: one continuous dive at sunset, from high above the Paphos coast down through the cloud to the villa.
-   It ends on the villa tour's first frame, so the tour below takes over without a seam. */
+/* the British site: one flight from the whole Earth down to the Eastern Mediterranean, with the logo and four lines
+   on the way (the home film), on into the west of Cyprus, and through the cloud to the villa (the Cyprus film).
+   tools/uk-film.ps1 joins the two films; tools/uk-opening.js laid their timings end to end. Phones get the same wide
+   film, as on the home page: the whole Earth fits the screen at the start, and the Cyprus part shows its middle,
+   which is what the Cyprus page's phone film is. */
 const F = {
-  url: ROOT + 'assets/film-cyprus.mp4', bytes: 9822895, seconds: 10.0417,
-  urlM: ROOT + 'assets/film-cyprus-m.mp4', posterM: ROOT + 'assets/cyprus-poster-m.jpg', bytesM: 5451874,
-  poster: ROOT + 'assets/cyprus-poster.jpg', end: ROOT + 'assets/cyprus-film-end.jpg',
-  tmap: [[0, 0], [0.1, 0], [0.95, 1], [1, 1]],
-  intro: null, cue: [0.01, 0.06], pe: [0.5, 0.9], pz: [0.05, 0.9, 1.6],
+  url: ROOT + 'assets/film-uk.mp4', bytes: 10456662, seconds: 15.875,
+  poster: ROOT + 'assets/hero-poster.jpg', end: ROOT + 'assets/cyprus-film-end.jpg',
+  tmap: [[0, 0], [0.0686, 0.01134], [0.2059, 0.10519], [0.4255, 0.22488], [0.5353, 0.32021], [0.5941, 0.39895], [0.6347, 0.39895], [0.9797, 1], [1, 1]],
+  intro: { g: [0.0892, 0.1853], mv: [0.1029, 0.1853], so: [0.0824, 0.1716], nk: [0.0082, 0.0535], end: 0.1029 },
+  cue: [0.0069, 0.0343], pe: [0.7971, 0.9594], pz: [0.6144, 0.9594, 1.6],
   pins: null, chooser: null
 };
 
@@ -1585,9 +1624,11 @@ function initHeroOnce() {
   setTimeout(startBlobFetch, 4000);
 }
 
+/* how fast the film follows the scroll each frame; with Lenis the scroll is smooth already, so it follows closer */
+const FOLLOW = window.__lenis ? 0.3 : 0.14;
 function tick(now) {
   const dt = Math.min(100, now - (lastTick || now)); lastTick = now;
-  shown += (target - shown) * (1 - Math.pow(1 - 0.14, dt / 16.667));
+  shown += (target - shown) * (1 - Math.pow(1 - FOLLOW, dt / 16.667));
   if (Math.abs(target - shown) < 0.0004) { shown = target; rafId = null; lastTick = 0; }
   else rafId = requestAnimationFrame(tick);
   if (video.duration) requestSeek(filmTime(shown));
@@ -2197,9 +2238,11 @@ function afterSeek(cb) {
   else requestAnimationFrame(() => requestAnimationFrame(fin));
   setTimeout(fin, 380);   /* frames pause in a hidden tab; the veil must never wait on them */
 }
+/* a jump lands at once, with Lenis too (it would otherwise glide from where it was) */
+const jump = y => window.__lenis ? window.__lenis.scrollTo(y, { immediate: true, force: true }) : scrollTo(0, y);
 function landOn(hash, el) {
   const y = hash === '#top' ? 0 : Math.round(el.getBoundingClientRect().top + scrollY);
-  scrollTo(0, y);
+  jump(y);
   lastScrollY = scrollY;
   snapHero(); jSnap(); starZ = starTo = reduced ? 0 : scrollY * 0.34;
   if (el.hasAttribute('data-reveal')) reveal(el);
@@ -2273,9 +2316,9 @@ function arrive() {
       if (el && el.offsetHeight) {
         const r = el.getBoundingClientRect();
         const y = spot ? r.top + scrollY + spot.f * r.height - innerHeight / 2 : r.top + scrollY;
-        scrollTo(0, Math.max(0, Math.round(y)));
+        jump(Math.max(0, Math.round(y)));
         if (el.hasAttribute('data-reveal')) reveal(el);
-      } else scrollTo(0, 0);
+      } else jump(0);
       lastScrollY = scrollY;
       snapHero(); jSnap(); starZ = starTo = reduced ? 0 : scrollY * 0.34; pageFrame();
     } finally {
@@ -2643,5 +2686,156 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { co
 addEventListener('load', () => { measure(); computeMx(); jMeasure(); jScroll(); });
 })();
 </script>
+<!-- motion:effects -->
+<script>
+/* ---------- motion from React Bits, ported to plain script: a sheen of light crosses the consultation button now and
+   then (Shiny Text), the buttons lean toward the pointer (Magnet), and the cards catch a soft light that follows the
+   pointer (Spotlight Card). Settings are the components' own defaults unless a note says otherwise. The page's words
+   keep the Cyprus design's own letter effects. ---------- */
+(() => {
+'use strict';
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const hex = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)).concat(1);
+
+/* ---------- Shiny Text: a soft band of light sweeps across the words, rests, and comes again ---------- */
+function shiny(host, o) {
+  const t = [...host.childNodes].find(n => n.nodeType === 3 && n.nodeValue.trim()); if (!t) return;
+  const root = document.createElement('span'); root.className = 'shiny-text'; t.replaceWith(root); root.append(t);
+  const s = { color: '#b5b5b5', shineColor: '#ffffff', speed: 2, delay: 0, angle: 120, shineWidth: 40, softness: 0.8, sign: -1, ...o };
+  const base = hex(s.color), shine = hex(s.shineColor);
+  const FALLOFF = [0, 0.2, 0.4, 0.6, 0.8, 1];
+  const blend = (from, to, amount) => {
+    const ch = (a, b) => Math.round(Math.pow(Math.pow(a / 255, 2.2) * (1 - amount) + Math.pow(b / 255, 2.2) * amount, 1 / 2.2) * 255);
+    return `rgba(${ch(from[0], to[0])}, ${ch(from[1], to[1])}, ${ch(from[2], to[2])}, 1)`;
+  };
+  const extent = s.shineWidth / 2 + 2;
+  const entry = s.sign > 0 ? -extent : 100 + extent, exit = s.sign > 0 ? 100 + extent : -extent;
+  const gradient = pos => {
+    const half = s.shineWidth / 2, core = half * (1 - s.softness), fade = half - core, stops = [];
+    for (const side of [-1, 1]) for (const f of FALLOFF) stops.push([pos + side * (core + fade * (1 - f)), f * f * (3 - 2 * f)]);
+    stops.sort((a, b) => a[0] - b[0]);
+    return `linear-gradient(${s.angle}deg, ${blend(base, shine, 0)} 0%, ${stops.map(([at, a]) => `${blend(base, shine, a)} ${at.toFixed(2)}%`).join(', ')}, ${blend(base, shine, 0)} 100%)`;
+  };
+  const still = `linear-gradient(${s.color}, ${s.color})`;
+  root.style.backgroundImage = still;
+  if (reduce) return;
+  const ease = t => 0.5 - Math.cos(Math.PI * t) / 2;
+  let visible = true, start = 0, raf = 0, timer = 0;
+  const tick = now => {
+    raf = 0;
+    if (!start) start = now;
+    const t = clamp((now - start) / (s.speed * 1000), 0, 1);
+    root.style.backgroundImage = gradient(entry + (exit - entry) * ease(t));
+    if (t < 1) { raf = requestAnimationFrame(tick); return; }
+    root.style.backgroundImage = still; start = 0;
+    timer = setTimeout(() => { timer = 0; if (visible) raf = requestAnimationFrame(tick); }, s.delay * 1000);
+  };
+  new IntersectionObserver(es => { visible = es.some(e => e.isIntersecting); if (visible && !raf && !timer) raf = requestAnimationFrame(tick); }).observe(root);
+}
+
+/* ---------- Magnet: within reach the button eases toward the pointer on a spring, and settles back when it leaves.
+   It moves by the translate property, so the button's own transforms stay as they are. ---------- */
+function magnet(el, o) {
+  const s = { padding: 100, strength: 2, maxOffset: null, stiffness: 170, damping: 16, mass: 1, ...o };
+  const cur = { x: 0, y: 0 }, vel = { x: 0, y: 0 };
+  let pointer = null, raf = 0, last = 0;
+  const smoothstep = (a, b, v) => { const t = clamp((v - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
+  const frame = now => {
+    raf = 0;
+    const dt = last ? Math.min((now - last) / 1000, 1 / 30) : 1 / 60; last = now;
+    const target = { x: 0, y: 0 };
+    if (pointer) {
+      const r = el.getBoundingClientRect();          /* where it would be without the pull */
+      const cx = r.left - cur.x + r.width / 2, cy = r.top - cur.y + r.height / 2;
+      const dx = pointer.x - cx, dy = pointer.y - cy;
+      const outside = Math.hypot(Math.max(0, Math.abs(dx) - r.width / 2), Math.max(0, Math.abs(dy) - r.height / 2));
+      if (outside <= s.padding) {
+        const pull = 1 - smoothstep(s.padding * 0.5, s.padding, outside);
+        let x = dx / s.strength * pull, y = dy / s.strength * pull;
+        const len = Math.hypot(x, y); if (s.maxOffset && len > s.maxOffset) { x *= s.maxOffset / len; y *= s.maxOffset / len; }
+        target.x = x; target.y = y;
+      }
+    }
+    let resting = true;
+    const steps = Math.ceil(dt / (1 / 120));
+    for (let i = 0; i < steps; i++) for (const k of ['x', 'y']) {
+      const force = s.stiffness * (target[k] - cur[k]) - s.damping * vel[k];
+      vel[k] += force / s.mass * (dt / steps); cur[k] += vel[k] * (dt / steps);
+    }
+    for (const k of ['x', 'y']) if (Math.abs(target[k] - cur[k]) > 0.05 || Math.abs(vel[k]) > 0.05) resting = false;
+    if (resting) { cur.x = target.x; cur.y = target.y; vel.x = vel.y = 0; }
+    el.style.translate = cur.x || cur.y ? `${cur.x.toFixed(2)}px ${cur.y.toFixed(2)}px` : '';
+    if (!resting) raf = requestAnimationFrame(frame); else last = 0;
+  };
+  const wake = () => { if (!raf) raf = requestAnimationFrame(frame); };
+  addEventListener('pointermove', e => { if (e.pointerType === 'touch') return; pointer = { x: e.clientX, y: e.clientY }; wake(); }, { passive: true });
+  addEventListener('scroll', wake, { passive: true });
+  document.documentElement.addEventListener('pointerleave', () => { pointer = null; wake(); });
+  addEventListener('blur', () => { pointer = null; wake(); });
+}
+
+/* ---------- Spotlight Card: a soft light follows the pointer across the card, and reaches it a little before the
+   pointer does; the card's edge catches the same light ---------- */
+function spotlight(card, o) {
+  const s = { color: '#ffffff', intensity: 0.15, size: 240, softness: 0.7, borderGlow: 0.6, proximity: 80, smoothing: 0.3, ...o };
+  const falloff = (color, softness) => {
+    const core = (1 - softness) ** 1.5 * 0.85;
+    const stop = (alpha, at) => `color-mix(in srgb, ${color} ${(alpha * 100).toFixed(2)}%, transparent) ${(at * 100).toFixed(2)}%`;
+    const list = [stop(1, 0)];
+    for (let i = 0; i <= 14; i++) {
+      const t = core + (1 - core) * i / 14, g = (t - core) / (1 - core);
+      const sm = 1 - g * g * (3 - 2 * g), glow = Math.exp(-4.6 * g * g) * (1 - g ** 6);
+      list.push(stop(sm + (glow - sm) * softness, t));
+    }
+    return list.join(', ');
+  };
+  const fill = falloff(s.color, s.softness), rim = falloff(s.color, 1);
+  if (getComputedStyle(card).position === 'static') card.style.position = 'relative';
+  card.style.isolation = 'isolate';
+  const light = document.createElement('span'), edge = document.createElement('span');
+  light.className = 'sl-light'; edge.className = 'sl-edge'; light.setAttribute('aria-hidden', 'true'); edge.setAttribute('aria-hidden', 'true');
+  card.prepend(light); card.append(edge);
+  const state = { x: 0, y: 0, presence: 0 }, pointer = { x: 0, y: 0, active: false };
+  let raf = 0, last = 0;
+  const tick = now => {
+    raf = 0;
+    const dt = Math.min(0.05, Math.max(0.001, (now - last) / 1000)); last = now;
+    const r = card.getBoundingClientRect();
+    let tx = state.x, ty = state.y, target = 0;
+    if (pointer.active) {
+      tx = pointer.x - r.left; ty = pointer.y - r.top;
+      const gap = Math.hypot(Math.max(0, -tx, tx - r.width), Math.max(0, -ty, ty - r.height));
+      target = gap === 0 ? 1 : s.proximity > 0 ? Math.max(0, 1 - gap / s.proximity) ** 2 : 0;
+    }
+    if (state.presence < 0.02 && target > 0) { state.x = tx; state.y = ty; }
+    const follow = 1 - Math.exp(-dt / (0.015 + s.smoothing * 0.22));
+    state.x += (tx - state.x) * follow; state.y += (ty - state.y) * follow;
+    state.presence += (target - state.presence) * (1 - Math.exp(-dt / (target > state.presence ? 0.1 : 0.32)));
+    if (Math.abs(target - state.presence) < 0.002) state.presence = target;
+    light.style.background = `radial-gradient(circle ${s.size}px at ${state.x.toFixed(1)}px ${state.y.toFixed(1)}px, ${fill})`;
+    edge.style.background = `radial-gradient(circle ${(s.size * 0.6).toFixed(1)}px at ${state.x.toFixed(1)}px ${state.y.toFixed(1)}px, ${rim})`;
+    light.style.opacity = String(Math.min(1, state.presence * s.intensity));
+    edge.style.opacity = String(Math.min(1, state.presence * s.borderGlow));
+    const moving = Math.abs(tx - state.x) > 0.1 || Math.abs(ty - state.y) > 0.1;
+    if (moving || state.presence !== target) raf = requestAnimationFrame(tick);
+  };
+  const wake = () => { if (!raf) { last = performance.now(); raf = requestAnimationFrame(tick); } };
+  addEventListener('pointermove', e => { if (e.pointerType === 'touch') return; pointer.x = e.clientX; pointer.y = e.clientY; pointer.active = true; wake(); }, { passive: true });
+  addEventListener('scroll', () => { if (pointer.active || state.presence > 0) wake(); }, { passive: true, capture: true });
+  document.addEventListener('pointerout', e => { if (!e.relatedTarget) { pointer.active = false; wake(); } });
+}
+
+/* the page's gold: the button's words in the brand's light gold, a near-white warm sheen; the cards' light warm */
+const cta = document.querySelector('.nav .btn-primary');
+if (cta) shiny(cta, { color: '#E9CF98', shineColor: '#FFF6E0', speed: 2.4, delay: 3.5, sign: 1 });
+if (fine && !reduce) {
+  document.querySelectorAll('.nav .btn-primary, .form .btn-primary').forEach(b => magnet(b, { padding: 60, strength: 4, maxOffset: 10 }));
+  document.querySelectorAll('.j-card, .form').forEach(c => spotlight(c, { color: '#F2E6CC', intensity: 0.14, size: 300, borderGlow: 0.55 }));
+}
+})();
+</script>
+<!-- /motion:effects -->
 </body>
 </html>
