@@ -1024,8 +1024,10 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
 .ledger.four{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media (max-width:1100px){.ledger.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:600px){.ledger.four{grid-template-columns:1fr}}
-#about .by{margin:18px 0 0;font:500 .74rem/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--stone)}
-#about .lede{margin-top:30px}
+/* about us: Paphos is a wide daytime photo, so it sits on its own middle (the story's rule frames tall portraits),
+   and Itai's portrait is square, so his logo beside him stays in */
+#about .bd-v{object-position:50% 45%}
+#about .story-photo{aspect-ratio:1/1}
 .fine .disclaimer{max-width:72ch}
 </style>
 <!-- motion:css -->
@@ -1092,7 +1094,7 @@ html.lenis body {
 
 
   <!-- ============ the whole Earth, down to the Eastern Mediterranean, into Cyprus and through the cloud to the villa ============ -->
-  <section class="hero" id="top" style="--hero-h:1020vh" aria-label="From space down to Cyprus">
+  <section class="hero" id="top" style="--hero-h:566vh" aria-label="From space down to Cyprus">
     <div class="stage" id="stage" data-static="cover" style="--static-img:url('assets/cyprus-above.jpg');--pzx:50%;--pzy:55%">
       <div class="media" aria-hidden="true">
         <div class="zoom">
@@ -1105,14 +1107,14 @@ html.lenis body {
       <div class="scrim" aria-hidden="true"></div>
       <div class="topscrim" aria-hidden="true"></div>
 
-      <div class="band b1" data-a="0" data-b="0.1029">
+      <div class="band b1" data-a="0" data-b="0.0927">
         <h1 class="sr-only">Momentum Capital Group</h1>
         <div class="lockup" id="lockup" dir="ltr">
           <span class="m3d hero-mark" data-spin data-assemble></span>
           <svg class="wm" viewBox="506 387 1081 190" aria-hidden="true" focusable="false"><g class="wm-top"><path class="lt" style="--i:0;--cx:567.7" d="M517.2 391.0L521.0 391.1L522.0 392.0L567.0 451.2L568.0 450.7L570.1 448.0L614.0 391.1L626.0 391.2L626.5 392.0L626.6 426.0L626.6 478.0L626.5 483.0L626.0 483.7L615.0 483.8L613.6 483.0L613.8 413.0L613.0 411.9L597.8 431.0L572.0 464.7L571.0 465.6L570.0 465.7L564.0 465.7L562.6 465.0L522.0 411.6L521.5 412.0L521.4 413.0L521.4 483.0L521.0 483.7L520.0 483.8L510.0 483.8L509.0 483.2L508.8 392.0L510.0 391.1Z"/><path class="lt" style="--i:1;--cx:722.1" d="M712.3 390.0L717.0 389.5L726.0 389.5L736.0 390.7L746.0 393.7L753.0 396.7L762.0 402.7L769.0 409.4L774.3 417.0L777.5 424.0L779.5 432.0L779.7 437.0L779.4 443.0L777.3 451.0L773.5 459.0L769.2 465.0L761.9 472.0L756.0 476.4L746.0 481.2L734.0 484.3L720.0 485.1L709.0 484.1L698.0 481.1L691.0 478.1L686.0 475.3L678.2 469.0L674.0 464.4L670.8 460.0L666.9 452.0L664.5 442.0L664.8 432.0L665.9 427.0L667.7 422.0L669.7 418.0L672.8 413.0L680.0 404.8L685.0 400.8L690.0 397.7L696.0 394.6L701.0 392.8ZM713.0 400.9L703.0 403.7L695.0 407.7L688.0 413.3L682.0 421.0L679.8 425.0L678.8 428.0L677.6 435.0L677.8 443.0L678.8 447.0L680.8 452.0L684.7 458.0L691.0 464.2L694.0 466.3L701.1 470.0L711.0 473.1L721.0 474.3L732.0 473.3L740.0 471.2L747.0 468.2L752.0 465.2L758.4 459.0L761.4 455.0L765.2 447.0L766.3 441.0L766.3 435.0L765.3 429.0L763.1 423.0L761.5 420.0L755.8 413.0L749.0 407.7L744.0 404.9L739.0 402.8L730.0 400.7L721.0 400.3Z"/><path class="lt" style="--i:2;--cx:875.0" d="M818.3 391.0L829.0 390.9L830.8 392.0L874.0 450.8L875.0 450.7L919.2 392.0L921.0 390.9L931.0 390.8L932.0 391.4L932.3 392.0L932.5 402.0L932.4 481.0L932.0 483.5L931.0 483.9L921.0 483.7L920.0 483.6L919.4 483.0L919.5 413.0L919.0 411.9L879.3 464.0L878.0 465.4L877.0 465.5L871.0 465.5L869.6 465.0L831.0 412.2L830.0 412.6L829.9 483.0L829.0 483.9L818.0 483.5L817.5 483.0L817.4 477.0L817.4 392.0Z"/><path class="lt" style="--i:3;--cx:1016.2" d="M977.9 391.0L1055.0 391.0L1055.6 392.0L1055.6 400.0L1055.0 401.2L991.0 401.3L990.0 401.8L989.6 430.0L990.0 430.8L991.0 431.2L1043.0 431.2L1043.8 432.0L1044.0 438.0L1043.8 441.0L1043.0 441.6L991.0 441.6L990.0 441.9L989.7 443.0L989.6 472.0L990.0 473.0L996.0 473.3L1055.0 473.4L1055.6 474.0L1055.6 477.0L1055.5 483.0L1055.0 483.7L982.0 483.9L978.0 483.8L977.0 483.3L976.8 392.0Z"/><path class="lt" style="--i:4;--cx:1143.7" d="M1097.8 391.0L1108.0 390.9L1110.0 391.4L1176.0 464.4L1177.2 464.0L1177.1 392.0L1178.0 391.0L1189.0 391.1L1189.9 392.0L1190.2 398.0L1190.0 483.0L1189.0 483.9L1177.0 483.6L1111.0 410.9L1110.3 412.0L1110.2 483.0L1109.0 483.8L1098.0 483.8L1097.2 483.0L1097.1 478.0L1097.2 395.0L1097.3 392.0Z"/><path class="lt" style="--i:5;--cx:1266.3" d="M1222.7 391.0L1309.0 390.9L1310.2 392.0L1310.3 400.0L1309.9 401.0L1309.0 401.4L1273.0 401.4L1272.0 402.0L1272.0 477.0L1271.8 483.0L1271.0 483.8L1260.0 483.8L1259.1 483.0L1258.9 402.0L1258.0 401.3L1223.0 401.3L1222.3 400.0L1222.3 392.0Z"/><path class="lt" style="--i:6;--cx:1382.2" d="M1338.8 391.0L1350.0 391.0L1350.8 392.0L1350.9 448.0L1351.7 454.0L1353.5 459.0L1357.5 465.0L1361.0 468.0L1364.0 470.0L1372.0 473.2L1378.0 474.2L1382.0 474.3L1386.0 474.1L1392.0 473.0L1399.8 470.0L1403.0 468.1L1407.0 464.8L1409.4 462.0L1411.2 459.0L1413.1 453.0L1413.8 448.0L1413.8 392.0L1415.0 391.0L1426.1 391.0L1426.7 392.0L1426.5 453.0L1425.3 458.0L1422.0 465.0L1419.3 469.0L1414.5 474.0L1409.0 478.2L1400.0 482.3L1393.0 484.2L1381.0 485.2L1371.0 484.3L1361.0 481.2L1357.0 479.2L1351.0 475.2L1346.6 471.0L1342.9 466.0L1339.5 459.0L1337.7 451.0L1337.6 393.0L1337.6 392.0Z"/><path class="lt" style="--i:7;--cx:1525.6" d="M1467.6 391.0L1479.0 390.9L1480.0 391.5L1519.7 445.0L1525.0 451.4L1571.0 391.7L1573.0 390.8L1583.4 391.0L1584.2 392.0L1584.2 396.0L1584.0 483.2L1583.0 483.9L1573.0 483.8L1571.7 483.0L1571.6 413.0L1571.0 411.7L1550.7 437.0L1529.4 465.0L1528.0 465.7L1521.0 465.7L1519.9 465.0L1481.0 412.3L1480.1 413.0L1480.1 483.0L1479.0 483.9L1468.0 483.8L1467.1 483.0L1467.1 478.0L1467.0 392.0Z"/></g><g class="wm-sub"><path class="ls" style="--i:0;--cx:649.5" d="M648.2 534.0L655.0 533.6L661.0 534.7L666.2 537.0L666.7 538.0L666.4 539.0L665.0 541.2L660.0 539.0L656.0 537.8L650.0 537.7L646.0 538.7L642.0 541.0L638.9 545.0L637.6 549.0L637.1 555.0L637.8 560.0L638.7 562.0L642.0 566.1L645.0 568.2L648.0 569.4L652.0 570.0L658.0 569.3L665.0 566.2L667.2 569.0L666.5 570.0L664.0 571.5L659.0 573.3L651.0 573.9L647.0 573.5L643.0 572.3L639.1 570.0L636.9 568.0L634.6 565.0L632.6 560.0L631.7 555.0L631.8 551.0L632.7 547.0L634.6 543.0L638.0 538.9L641.0 536.6L645.0 534.8Z"/><path class="ls" style="--i:1;--cx:720.6" d="M717.3 535.0L718.0 534.5L722.0 534.4L723.0 534.5L724.1 536.0L726.5 542.0L739.3 569.0L740.8 573.0L740.0 573.5L737.0 573.5L735.7 573.0L731.1 563.0L730.0 562.2L729.0 562.2L711.0 562.3L709.5 564.0L705.5 573.0L704.0 573.6L701.0 573.5L700.4 573.0ZM720.0 540.0L712.4 557.0L712.5 558.0L713.0 558.4L728.0 558.4L728.6 558.0L728.5 557.0L721.0 540.1Z"/><path class="ls" style="--i:2;--cx:791.6" d="M776.0 535.0L777.0 534.3L778.0 534.3L794.0 534.3L797.0 534.6L800.0 535.5L803.0 537.4L805.4 540.0L806.4 542.0L807.2 546.0L806.7 550.0L805.5 553.0L802.0 556.2L799.0 557.5L795.0 558.3L782.0 558.4L781.4 559.0L781.4 572.0L781.0 573.2L780.0 573.5L777.0 573.4L776.1 572.0ZM782.0 537.9L781.2 539.0L781.2 553.0L781.2 554.0L782.0 554.7L795.0 554.4L798.0 553.5L801.0 551.0L802.3 548.0L802.4 545.0L801.4 542.0L799.0 539.6L797.0 538.7L793.5 538.0Z"/><path class="ls" style="--i:3;--cx:846.1" d="M843.5 535.0L845.0 534.3L848.0 534.5L848.6 535.0L848.8 536.0L848.8 572.0L848.6 573.0L848.0 573.5L844.0 573.3L843.4 572.0Z"/><path class="ls" style="--i:4;--cx:902.5" d="M885.5 535.0L886.0 534.5L888.0 534.4L918.0 534.3L919.0 534.4L919.5 535.0L919.5 537.0L919.0 537.8L906.0 537.9L904.8 539.0L904.8 572.0L904.6 573.0L904.0 573.5L901.0 573.4L900.1 572.0L900.0 539.0L899.0 537.8L886.0 537.9L885.4 537.0Z"/><path class="ls" style="--i:5;--cx:967.0" d="M964.3 535.0L965.0 534.5L968.0 534.4L970.1 535.0L985.3 568.0L987.0 572.0L987.0 573.3L983.0 573.5L982.5 573.0L978.0 563.3L977.0 562.3L976.0 562.2L957.0 562.6L951.7 573.0L951.0 573.5L948.0 573.6L947.0 573.0L952.9 559.0ZM967.0 539.7L966.0 541.1L962.5 549.0L959.0 557.0L958.9 558.0L960.0 558.4L975.0 558.3L975.1 557.0L968.0 541.0Z"/><path class="ls" style="--i:6;--cx:1036.0" d="M1022.4 535.0L1023.0 534.4L1024.0 534.4L1027.0 534.5L1027.4 535.0L1027.6 569.0L1029.0 569.5L1048.0 569.4L1049.3 570.0L1049.5 572.0L1049.0 573.3L1024.0 573.6L1022.6 573.0Z"/><path class="ls" style="--i:7;--cx:1146.5" d="M1145.2 534.0L1151.0 533.7L1157.0 534.6L1162.5 537.0L1163.5 538.0L1163.2 539.0L1162.0 541.1L1156.0 538.8L1151.0 537.7L1148.0 537.7L1142.0 538.9L1139.0 540.5L1135.7 544.0L1133.6 548.0L1132.7 554.0L1133.6 560.0L1136.6 565.0L1141.0 568.3L1144.0 569.4L1148.0 570.0L1156.0 569.3L1159.0 568.2L1160.2 567.0L1160.0 557.2L1159.0 556.5L1150.0 556.5L1149.0 556.0L1148.7 555.0L1149.0 553.2L1150.0 552.7L1164.6 553.0L1165.2 554.0L1165.1 569.0L1164.0 570.4L1159.0 572.6L1155.0 573.6L1149.0 574.2L1143.0 573.5L1139.0 572.3L1135.1 570.0L1131.9 567.0L1130.5 565.0L1128.7 561.0L1127.8 556.0L1127.8 551.0L1128.7 547.0L1130.5 543.0L1133.1 540.0L1137.0 536.9L1141.2 535.0Z"/><path class="ls" style="--i:8;--cx:1219.5" d="M1203.5 535.0L1205.0 534.3L1225.0 534.6L1229.0 535.8L1232.7 539.0L1234.3 542.0L1234.7 544.0L1234.6 547.0L1234.0 550.0L1232.0 553.3L1229.0 555.5L1225.4 557.0L1225.4 558.0L1235.0 572.2L1235.5 573.0L1235.0 573.6L1231.0 573.6L1230.0 573.1L1220.0 558.4L1219.0 557.7L1218.0 557.6L1210.0 557.6L1208.7 558.0L1208.3 559.0L1208.2 573.0L1207.0 573.5L1205.0 573.5L1203.6 573.0ZM1210.0 537.9L1209.0 538.1L1208.4 539.0L1208.3 553.0L1209.0 553.7L1223.0 553.5L1226.7 552.0L1229.0 549.6L1229.8 547.0L1229.6 544.0L1229.0 542.2L1227.0 539.7L1225.0 538.7L1222.0 538.0Z"/><path class="ls" style="--i:9;--cx:1291.3" d="M1287.2 534.0L1295.0 533.8L1302.0 535.8L1305.0 537.7L1308.4 541.0L1310.4 544.0L1311.7 547.0L1312.6 551.0L1312.6 556.0L1312.2 559.0L1310.4 564.0L1307.4 568.0L1305.0 570.2L1301.9 572.0L1298.0 573.4L1294.0 574.1L1289.0 574.0L1284.0 573.2L1280.0 571.5L1277.0 569.5L1274.0 566.4L1270.8 560.0L1270.1 554.0L1270.6 549.0L1271.5 546.0L1273.6 542.0L1276.4 539.0L1279.1 537.0L1284.0 534.7ZM1287.0 537.9L1284.0 538.9L1281.0 540.7L1278.7 543.0L1276.8 546.0L1275.4 551.0L1275.3 555.0L1275.8 559.0L1277.0 561.9L1279.0 564.6L1282.0 567.4L1284.0 568.5L1287.0 569.5L1291.0 570.1L1297.0 569.4L1301.0 567.5L1302.8 566.0L1304.5 564.0L1306.1 561.0L1307.5 555.0L1307.2 551.0L1306.2 547.0L1305.4 545.0L1303.1 542.0L1298.0 538.8L1293.0 537.6Z"/><path class="ls" style="--i:10;--cx:1366.3" d="M1348.8 535.0L1350.0 534.4L1353.0 534.5L1353.6 535.0L1353.8 559.0L1354.7 564.0L1357.0 567.0L1359.0 568.3L1362.0 569.5L1366.0 570.0L1370.0 569.6L1373.0 568.7L1375.0 567.5L1377.4 565.0L1378.3 563.0L1379.0 558.0L1379.1 535.0L1380.0 534.4L1382.0 534.4L1383.0 534.4L1383.7 535.0L1383.9 561.0L1383.4 564.0L1382.5 566.0L1381.3 568.0L1379.0 570.3L1376.0 572.2L1373.0 573.3L1365.0 574.1L1361.0 573.6L1357.0 572.4L1354.5 571.0L1352.4 569.0L1350.5 566.0L1348.9 561.0Z"/><path class="ls" style="--i:11;--cx:1437.4" d="M1421.6 535.0L1423.0 534.3L1440.0 534.4L1446.0 535.5L1448.7 537.0L1451.6 540.0L1452.5 542.0L1453.2 545.0L1453.1 548.0L1451.8 552.0L1450.0 554.5L1447.0 556.6L1441.0 558.3L1428.0 558.5L1427.0 558.9L1426.8 572.0L1426.6 573.0L1426.0 573.5L1423.0 573.5L1422.0 573.1L1421.6 572.0ZM1428.0 537.8L1426.8 539.0L1427.0 554.3L1428.0 554.7L1440.0 554.6L1444.0 553.4L1446.8 551.0L1447.8 549.0L1448.1 545.0L1447.0 542.1L1445.0 539.8L1443.0 538.7L1439.0 537.9Z"/></g></svg>
         </div>
       </div>
-      <div class="band" data-a="0.1167" data-b="0.3">
+      <div class="band" data-a="0.105" data-b="0.27">
         <div class="cap cap-top" style="--sa:.92">
           <h2 class="cap-h md split fx-lights" data-seed="11">We specialise in guiding British and European buyers to purchase property in Cyprus.</h2>
           <p class="cap-sub">You choose the property. We take care of everything else.</p>
@@ -1120,7 +1122,7 @@ html.lenis body {
         </div>
       </div>
 
-      <div class="band" data-a="0.5941" data-b="0.6469">
+      <div class="band" data-a="0.5614" data-b="0.6185">
         <div class="cap cap-title" style="--sa:.85">
           <h2 class="country-h">Cyprus</h2>
         </div>
@@ -1208,16 +1210,28 @@ html.lenis body {
     </div>
   </section>
 
-  <!-- about us: the founder, briefly, before the questions and the consultation that closes the page -->
-  <section class="sec say" id="about" aria-labelledby="ab-h" data-reveal>
-    <div class="wrap say-grid">
-      <div>
-        <span class="kicker rv">About us</span>
-        <h2 class="h2 rv" style="--d:1" id="ab-h">Itai Hazan</h2>
-        <p class="by rv" style="--d:2">Founder, Momentum Capital Group</p>
-        <p class="lede rv" style="--d:3">&ldquo;I live in Cyprus, and I help British and European families find homes here with care and honesty. Every client is treated as I&rsquo;d want my own family to be.&rdquo;</p>
+  <!-- about us: Itai's story, in his words, over Paphos (the town stands clear behind the title, and steps back while
+       you read); before the questions and the consultation that closes the page -->
+  <section class="sec story" id="about" aria-labelledby="ab-h" data-reveal>
+    <div class="bd" aria-hidden="true" data-dim="#about .story-grid">
+      <div class="bd-in">
+        <img class="bd-v" src="assets/paphos-town.jpg" alt="" loading="lazy" decoding="async" width="1440" height="961">
       </div>
-      <figure class="say-photo rv" style="--d:2"><img src="assets/itai.jpg" alt="Itai Hazan, founder of Momentum Capital Group" loading="lazy" decoding="async" width="1200" height="1600"></figure>
+    </div>
+    <div class="wrap story-intro">
+      <span class="kicker rv">About us</span>
+      <h2 class="h2 rv" style="--d:1" id="ab-h">To truly understand a market, you have to live it.</h2>
+      <p class="by rv" style="--d:2">Itai Hazan, Founder, Momentum Capital Group</p>
+    </div>
+    <div class="wrap story-grid">
+      <figure class="story-photo rv" style="--d:1"><img src="assets/itai-portrait.jpg" alt="Itai Hazan, founder of Momentum Capital Group" loading="lazy" decoding="async" width="1080" height="1080"></figure>
+      <div class="story-body">
+        <p class="rv" style="--d:2">It all began with family property deals that brought me to Paphos. The deeper I got into the market, the clearer it became how fast the city was changing, and which areas held real potential. So I moved there to learn the market from the inside.</p>
+        <p class="rv" style="--d:3">For a year I lived Paphos day to day: its neighbourhoods, purchase and rental prices, where demand is growing, and which new projects are worth a buyer&rsquo;s attention. Along the way I built close relationships with the island&rsquo;s leading developers and companies.</p>
+        <p class="rv" style="--d:4">Since then I&rsquo;ve personally guided many British and European buyers, couples and families relocating to Cyprus or looking for the right holiday home.</p>
+        <p class="rv" style="--d:5">At Momentum, we take care of every step for you: from finding the right property, through independent lawyers, banking and mortgages, to property management and settling in.</p>
+        <p class="end rv" style="--d:6">You choose the property. We take care of everything else.</p>
+      </div>
     </div>
   </section>
 
@@ -1325,9 +1339,9 @@ const T = {
 const F = {
   url: ROOT + 'assets/film-uk.mp4', bytes: 10456662, seconds: 15.875,
   poster: ROOT + 'assets/hero-poster.jpg', end: ROOT + 'assets/cyprus-film-end.jpg',
-  tmap: [[0, 0], [0.0686, 0.01134], [0.2059, 0.10519], [0.4255, 0.22488], [0.5353, 0.32021], [0.5941, 0.39895], [0.6347, 0.39895], [0.9797, 1], [1, 1]],
-  intro: { g: [0.0892, 0.1853], mv: [0.1029, 0.1853], so: [0.0824, 0.1716], nk: [0.0082, 0.0535], end: 0.1029 },
-  cue: [0.0069, 0.0343], pe: [0.7971, 0.9594], pz: [0.6144, 0.9594, 1.6],
+  tmap: [[0, 0], [0.0618, 0.01134], [0.1854, 0.10519], [0.3831, 0.22488], [0.482, 0.32021], [0.5614, 0.39895], [0.6053, 0.39895], [0.9781, 1], [1, 1]],
+  intro: { g: [0.0803, 0.1668], mv: [0.0927, 0.1668], so: [0.0742, 0.1545], nk: [0.0074, 0.0482], end: 0.0927 },
+  cue: [0.0062, 0.0309], pe: [0.7807, 0.9561], pz: [0.5834, 0.9561, 1.6],
   pins: null, chooser: null
 };
 
